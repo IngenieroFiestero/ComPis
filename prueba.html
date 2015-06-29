@@ -33,6 +33,7 @@
 	          <ul class="nav navbar-nav">
 	      <li class="active"><a href="#">Buscar Compañeros</a></li>
 	      <li><a href="http://www.zaragoza.es/ciudad/sectores/jovenes/cipaj/cont/insertaranuncios.htm" target="_blank">Insertar Anuncio</a></li>
+	      <li><a href="#arriba">Subir</a></li>
 	      <li class="dropdown">
 	        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
 	          Acerca de<b class="caret"></b>
@@ -49,9 +50,52 @@
 	      </div>
 	    </nav>
 
-		<div class="jumbotron" style="margin-top:30px">
-			<p><a class="btn btn-default" ng-click="vm.pedir()" role="button">View &raquo;</a></p>
-			<p><a class="btn btn-default" onClick="prueba()" role="button">Probando &raquo;</a></p>
+		<div class="jumbotron" style="margin-top:30px" id="arriba">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 col-md-3 col-personalizada">
+						<div class="input-group input-personalizado input-group-sm">
+							<span class="input-group-addon">Precio max(€)</span>
+							<input type="text" class="form-control" aria-label="Precio maximo" ng-model="vm.filtro.precio_maximo">
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-3 col-personalizada">
+						<div class="input-group input-personalizado input-group-sm">
+							<span class="input-group-addon visor-input">Habitaciones</span>
+							<input type="text" class="form-control" aria-label="Habitaciones" ng-model="vm.filtro.habitaciones">
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-3 col-personalizada">
+						 <div class="form-group form-group-sm">
+								<select class="form-control" id="sel_genero" ng-model="vm.filtro.genero">
+									<option>Ambos</option>
+									<option>Compañera</option>
+									<option>Compañero</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-3 col-personalizada">
+						<div class="input-group input-group-sm">
+							<span class="input-group-addon">Garage</span>
+							<span class="input-group-addon">
+								<input type="checkbox" aria-label="..." ng-model="vm.filtro.garage">
+							</span>
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-3 col-personalizada">
+						<div class="input-group input-group-sm">
+							<span class="input-group-addon">Mostrar elementos omitidos</span>
+							<span class="input-group-addon">
+								<input type="checkbox" aria-label="..." ng-model="vm.filtro.visualizacion">
+							</span>
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-3 col-personalizada">
+						<p><a class="btn btn-default" ng-click="vm.filtrar()" role="button">Aplicar Filtro &raquo;</a></p>
+						<p><a class="btn btn-default" onClick="prueba()" role="button">Probando &raquo;</a></p>
+					</div>
+				</div>
+			</div>	
 		</div>
 
 		<div class="container">
