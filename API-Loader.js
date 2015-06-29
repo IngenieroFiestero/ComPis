@@ -1,3 +1,4 @@
+var descripcion_ejemplo = " 2 habitaciones amplias, luminosas. Una de ellas tiene terraza. Cocina, baño y salón a compartir. Económico, 200 euros, (incluido wifi, comunidad y calefacción) más gastos de luz y agua";
 var anuncio_lista;
 angular
   .module('ComPiApp', [])
@@ -33,40 +34,73 @@ function filtro_ID(datos,cb){
 	});
 	cb(vector_ID);
 }
-//Parametros: amueblado, habitaciones maximas, precio limite,
-function busqueda_precios(palabras,cb){
+function anuncio_computado(titulo,descripcion,id,posicion,precio,calle,zona,habitaciones){
+	this.titulo = titulo;
+	this.descripcion = descripcion;
+	this.id = id;
+	this.posicion = posicion;
+	this.habitaciones = habitaciones;
+	this.precio = precio;
+	this.calle = calle;
+	this.zona = zona;
+}
+function dividir_cadena(cadena){
+	var frases_split_punto = cadena.split(".");
+	var frases = [];
+	frases_split_punto.forEach(function(dato,i){
+		frases.push(eliminar_paja(dato));
+	});
+	return frases;
+}
+function busqueda_precios(frase,cb){
 	var clave_precio = ["precio", "euros", "euro","eur","€"];
 	//Split de palabras y buscar en ellas las palabrras clave
-	var vec_split = palabras.split(" ");
 	var precio = 0;
 	var encontrado = false;
-	vec_split.forEach(function(dato,i){
-		if(encontrado == false){
-			clave_precio.forEach(function(dat_precio,i_precio){
-				if(validar_clave(dato,dat_precio)){
-					for(j=i-2;j < i+2;j++){
-						if(isNaN(parseInt(vec_split[j])) === false){
-							precio = parseInt(vec_split[j]);
-							encontrado = true;
-						}
+	var i = 0;
+	var j = 0;
+	while(encontrado === false && i < frase.length){
+		j=0;
+		while(encontrado === false && j < clave_precio.length){
+			if(validar_clave(frase[i], clave_precio[j]) ){
+				var w = i-2;
+				while(encontrado === false && w < i+2){
+					var numero = encontrar_int(frase[w]);
+					if(isNaN(numero) === false){
+						precio = numero;
+						encontrado = true;
 					}
+					w++;
 				}
-			});
+			}
+			j++;
 		}
-	});
+		i++;
+	}
 	cb(precio);
 }
-function validar_clave(palabra,clave){
+//Si encuentra la palabra clave en una palabra devuelve true
+//Ejemplo: validar_clave("euros/persona","euros")->true
+function validar_clave(palabra, clave){
+	var devolver = false;
+	var i = 0;
+	//Aplicar un mejor algoritmo de busqueda
+	var seguidas = 0;
 	var j = 0;
-	for(var i = 0; i<palabra.length;i++){
-		var caracter = palabra.charAt(i);
-		if(caracter == clave.charAt(j)){
-			j++;
-			if(j>= clave.length){
-				return true;
+	while(devolver === false && i < palabra.length){
+		j=i;
+		while(devolver === false && j < palabra.length && j-i < clave.length){
+			if(seguidas >= clave.length){
+				devolver = true;
 			}
+			if(palabra.charAt(j) === clave.charAt(j-i)){
+				seguidas++;
+			}
+			j++;
 		}
+		i++;
 	}
+	return devolver;
 }
 function encontrar_int(palabra){
 	var numero ="";
@@ -75,21 +109,31 @@ function encontrar_int(palabra){
 		var caracter = palabra.charAt(i);
 		if(isNaN(parseInt(caracter)) == false){
 			encontrado = true;
-			precio = precio + caracter;
+			numero = numero + caracter;
 		}else{
 			if(encontrado == true){
-				return parseInt(precio);
+				return parseInt(numero);
 			}
 		}
 	}
-	return parseInt(precio);
+	return parseInt(numero);
+}
+function prueba(){
+	//console.log(encontrar_int("alfaasdasd"));
+	//console.log(encontrar_int("alfa1890beta45"));
+	//console.log(eliminar_paja(descripcion_ejemplo));
+	/*
+	busqueda_precios(eliminar_paja(descripcion_ejemplo),function(precio){
+		console.log(precio);
+	});
+	*/
+	dividir_cadena(descripcion_ejemplo);
 }
 
 var anuncio_juventud = {};
 anuncio_juventud.URL= "http://www.zaragoza.es/api/recurso/cultura-ocio/anuncio-juventud";
 anuncio_juventud.peticion ="?start=0&rows=2000";
 anuncio_juventud.insertar_anuncio="http://www.zaragoza.es/ciudad/sectores/jovenes/cipaj/cont/insertaranuncios.htm"; 
-console.log(anuncio_juventud);
 	//URL de la API de anuncios para jovenes
 	/*
 	fl : Listado de atributos separados por comas que
@@ -122,27 +166,37 @@ console.log(anuncio_juventud);
 var estaciones_bici = {};
 estaciones_bici.URL = "http://www.zaragoza.es/api/recurso/urbanismo-infraestructuras/estacion-bicicleta";
 estaciones_bici.peticion="?start=0&rows=2000&srsname=wgs84";
-function pedir(){
-	generar_peticiones(anuncio_juventud.URL + anuncio_juventud.peticion);
-}
 
-function generar_peticion(URL){
-	$.getJSON(URL,function(data, status){
-		if(status==="success"){
-			//Los resultados no muestran ni telefono ni email, por lo que hay que hacer scraping en la web
-			//http://www.zaragoza.es/juventud/cipaj/anuncios/obtenerAnuncio?cl= id
-			anuncio_lista = data.result;
-			console.log(anuncio_lista);
+/* Analizador sintáctico de oraciones. 
+Elimina la paja (palabras menores de 2 letras que no sean numeros) 
+asi como preposiciones, articulos, conjunciones...
+*/
+var clave = ["los","las","ante", "bajo", "con", "contra","desde","entre", "durante", "hacia", "hasta", "mediante", "para", "por", "según", "sin", "sobre", "tras","pero","sino","que","como","mas","porque","puesto","luego","con","para","aunque","muy"];
+function eliminar_paja(cadena){
+	var cadena_split = cadena.split(" ");
+	var cadena_computada = [];
+	cadena_split.forEach(function(dato,i){
+		//Si es un número no eliminamos la palabra
+		if(isNaN(parseInt(dato)) == false){
+			cadena_computada.push(dato);
+		}else if(dato.length <= 2){
+			//No se añade(se elimina)
+		}else if(esClave(dato)){
+			//Si es una palabra dentro del vector clave no aporta informacion util y se desecha
 		}else{
-			console.log(status);
+			cadena_computada.push(dato);
 		}
 	});
+	return cadena_computada;
 }
-function obtener_contacto(id,cb){
-
-	cb(phone,email);
-}
-function generar_posicion(){
-	//Genera una geolocalizacion aproxiada sabiendo el nombre de la calle.
-
+function esClave(palabra){
+	var devuelve = false;
+	var i = 0;
+	while(devuelve === false && i <clave.length){
+		if(palabra === clave[i]){
+			devuelve = true;
+		}
+		i++;
+	}
+	return devuelve;
 }
