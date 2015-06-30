@@ -1,0 +1,605 @@
+{"level":"info","message":"   PLUGIN     : default Send Refresh clientlist to dashboard (0)[Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0] socketid = iZaA1PttSvLIfHs2AAAA ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:20:29.367Z"}
+{"level":"info","message":"   PLUGIN     : default New client (0)[Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0] socketid = iZaA1PttSvLIfHs2AAAA ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:20:29.373Z"}
+{"level":"info","message":"   PLUGIN     : default Number clients in session : 1 ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:20:29.375Z"}
+{"level":"info","message":"   PLUGIN     : default New client (0) wait... ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:20:29.375Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 1 in session default","timestamp":"2015-06-30T07:21:05.119Z"}
+{"level":"info","message":"   DASHBOARD  : default New Dashboard 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:06.549Z"}
+{"level":"info","message":"   DASHBOARD  : default Client selected for :ddc19560-9771-4896-82c0-4fe8432d955b 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:06.551Z"}
+{"level":"info","message":"   DASHBOARD  : default Change currentClient 3c131a05-f3ce-4963-b535-1328124db529 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:06.551Z"}
+{"level":"info","message":"   DASHBOARD  : default Send helo to socketid :iZaA1PttSvLIfHs2AAAA 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:06.551Z"}
+{"level":"info","message":"   DASHBOARD  : default Send helo to Dashboard 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:06.555Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD CONSOLE:clear ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:21:06.826Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:setSettings 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:07.808Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:getMutationObeserverAvailability 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:07.810Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD DOM:init ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:21:08.080Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD MODERNIZR ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:21:08.083Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD OBJEXPLORER ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:21:08.091Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD XHRPANEL:state ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:21:08.092Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD NETWORK ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:21:08.096Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD RESOURCES ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:21:08.102Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD CONSOLE:entries ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:21:08.288Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD DOM:mutationObeserverAvailability ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:21:08.291Z"}
+{"level":"info","message":"   DASHBOARD  : Delete dashboard default socket IIYhm6ACv1RR8DeqAAAC ","timestamp":"2015-06-30T07:21:10.740Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 1 in session default","timestamp":"2015-06-30T07:21:12.238Z"}
+{"level":"info","message":"   DASHBOARD  : default New Dashboard 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:13.028Z"}
+{"level":"info","message":"   DASHBOARD  : default Client selected for :ddc19560-9771-4896-82c0-4fe8432d955b 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:13.029Z"}
+{"level":"info","message":"   DASHBOARD  : default Change currentClient 3c131a05-f3ce-4963-b535-1328124db529 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:13.029Z"}
+{"level":"info","message":"   DASHBOARD  : default Send helo to socketid :iZaA1PttSvLIfHs2AAAA 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:13.030Z"}
+{"level":"info","message":"   DASHBOARD  : default Send helo to Dashboard 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:13.034Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD CONSOLE:clear ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:21:13.165Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD DOM:init ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:21:14.239Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD MODERNIZR ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:21:14.242Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD OBJEXPLORER ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:21:14.251Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD XHRPANEL:state ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:21:14.258Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD NETWORK ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:21:14.259Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD RESOURCES ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:21:14.261Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:setSettings 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:14.328Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:getMutationObeserverAvailability 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:14.329Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD CONSOLE:entries ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:21:14.472Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD DOM:mutationObeserverAvailability ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:21:14.986Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:15.880Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:16.002Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:16.007Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:16.010Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:16.014Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:16.025Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:16.027Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:16.114Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:16.118Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:16.121Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:16.410Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:16.474Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:19.175Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:19.232Z"}
+{"level":"info","message":"   DASHBOARD  : default Identify clients 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:20.061Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 0 to socketid : iZaA1PttSvLIfHs2AAAA 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:20.063Z"}
+{"level":"info","message":"   DASHBOARD  : default Send 0 identify(s) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:20.063Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:29.572Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:29.682Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:29.718Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:29.775Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:29.860Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:30.379Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD OBJEXPLORER ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:21:34.118Z"}
+{"level":"info","message":"   DASHBOARD  : default Identify clients 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:45.850Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 0 to socketid : iZaA1PttSvLIfHs2AAAA 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:45.851Z"}
+{"level":"info","message":"   DASHBOARD  : default Send 0 identify(s) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:45.852Z"}
+{"level":"info","message":"   DASHBOARD  : default Identify clients 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:46.820Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 0 to socketid : iZaA1PttSvLIfHs2AAAA 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:46.821Z"}
+{"level":"info","message":"   DASHBOARD  : default Send 0 identify(s) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:46.821Z"}
+{"level":"info","message":"   DASHBOARD  : Delete dashboard default socket 6E-aFusqkl16UkIYAAAE ","timestamp":"2015-06-30T07:21:48.088Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 1 in session default","timestamp":"2015-06-30T07:21:48.854Z"}
+{"level":"info","message":"   DASHBOARD  : default New Dashboard 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:49.480Z"}
+{"level":"info","message":"   DASHBOARD  : default Client selected for :ddc19560-9771-4896-82c0-4fe8432d955b 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:49.480Z"}
+{"level":"info","message":"   DASHBOARD  : default Change currentClient 3c131a05-f3ce-4963-b535-1328124db529 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:49.480Z"}
+{"level":"info","message":"   DASHBOARD  : default Send helo to socketid :iZaA1PttSvLIfHs2AAAA 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:49.481Z"}
+{"level":"info","message":"   DASHBOARD  : default Send helo to Dashboard 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:49.483Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD CONSOLE:clear ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:21:49.787Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:setSettings 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:50.599Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:getMutationObeserverAvailability 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:50.600Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD DOM:init ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:21:50.723Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD MODERNIZR ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:21:50.727Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD OBJEXPLORER ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:21:50.738Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD XHRPANEL:state ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:21:50.743Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD NETWORK ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:21:50.745Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD RESOURCES ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:21:50.748Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD CONSOLE:entries ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:21:50.911Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD DOM:mutationObeserverAvailability ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:21:50.912Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:51.704Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:52.187Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:52.253Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:52.722Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:52.829Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:53.263Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:53.518Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:53.911Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:53.996Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:54.076Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:55.164Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:56.546Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:56.650Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:57.061Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:57.398Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:57.504Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:57.565Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:21:58.141Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD OBJEXPLORER ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:22:00.930Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:01.184Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:01.675Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:refreshNode 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:02.217Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD DOM:refreshNode ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:22:02.480Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:02.842Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:02.915Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:02.978Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:03.037Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:03.350Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:03.577Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:refreshNode 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:03.936Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD DOM:refreshNode ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:22:04.168Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:04.285Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:04.288Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:04.473Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:05.547Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:05.653Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:05.659Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:05.662Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:05.732Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:05.847Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:06.377Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:07.399Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD CONSOLE:entries ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:22:09.050Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:10.240Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:11.557Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD CONSOLE:entries ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:22:11.905Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:12.593Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD ALL_PLUGINS ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:22:12.601Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:13.135Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:14.395Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:15.128Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:15.722Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:15.802Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:16.185Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:18.130Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:18.194Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:18.268Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:18.270Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:18.581Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:18.636Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:18.715Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:19.096Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:19.171Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:20.010Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:20.161Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:20.900Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:20.979Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:20.983Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD OBJEXPLORER ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:22:21.133Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:22.355Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:22.364Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:22:22.427Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 1 in session default","timestamp":"2015-06-30T07:37:10.621Z"}
+{"level":"info","message":"   DASHBOARD  : default Reconnect a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T07:37:12.325Z"}
+{"level":"info","message":"   DASHBOARD  : default Client selected for :ddc19560-9771-4896-82c0-4fe8432d955b a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T07:37:12.326Z"}
+{"level":"info","message":"   DASHBOARD  : default Change currentClient a7e65db1-eb0e-4627-b260-a7f6f37eea78 a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T07:37:12.326Z"}
+{"level":"info","message":"   DASHBOARD  : default Send helo to socketid :iZaA1PttSvLIfHs2AAAA a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T07:37:12.327Z"}
+{"level":"info","message":"   DASHBOARD  : default Send helo to Dashboard a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T07:37:12.331Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD CONSOLE:clear ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:37:12.336Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:setSettings a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T07:37:12.524Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:getMutationObeserverAvailability a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T07:37:12.531Z"}
+{"level":"info","message":"   DASHBOARD  : default Identify clients a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T07:37:20.261Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 0 to socketid : iZaA1PttSvLIfHs2AAAA a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T07:37:20.262Z"}
+{"level":"info","message":"   DASHBOARD  : default Send 0 identify(s) a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T07:37:20.262Z"}
+{"level":"info","message":"   DASHBOARD  : Delete dashboard default socket 9o6BSjZlR1frIHuSAAAI ","timestamp":"2015-06-30T07:37:38.296Z"}
+{"level":"error","message":"  PLUGIN     : default no dashboard found DOM:mutationObeserverAvailability ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:37:42.153Z"}
+{"level":"error","message":"  PLUGIN     : default no dashboard found DOM:init ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:37:42.156Z"}
+{"level":"error","message":"  PLUGIN     : default no dashboard found MODERNIZR ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:37:42.161Z"}
+{"level":"error","message":"  PLUGIN     : default no dashboard found OBJEXPLORER ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:37:42.168Z"}
+{"level":"error","message":"  PLUGIN     : default no dashboard found XHRPANEL:state ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:37:42.172Z"}
+{"level":"error","message":"  PLUGIN     : default no dashboard found NETWORK ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:37:42.174Z"}
+{"level":"error","message":"  PLUGIN     : default no dashboard found RESOURCES ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:37:42.177Z"}
+{"level":"error","message":"  PLUGIN     : default no dashboard found CONSOLE:entries ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T07:37:42.539Z"}
+{"level":"info","message":"   PLUGIN     : default Send Refresh clientlist to dashboard (1)[Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0] socketid = 85cCpa6O0h2axK8LAAAK 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:54:44.799Z"}
+{"level":"info","message":"   PLUGIN     : default New client (1)[Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0] socketid = 85cCpa6O0h2axK8LAAAK 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:54:44.799Z"}
+{"level":"info","message":"   PLUGIN     : default Number clients in session : 2 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:54:44.799Z"}
+{"level":"info","message":"   PLUGIN     : default New client (1) wait... 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:54:44.800Z"}
+{"level":"info","message":"   PLUGIN     : default NOT sending RefreshClients, no Dashboard 85cCpa6O0h2axK8LAAAK 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:56:05.738Z"}
+{"level":"info","message":"   PLUGIN     : default Client Close 85cCpa6O0h2axK8LAAAK 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:56:05.738Z"}
+{"level":"info","message":"   PLUGIN     : Delete client socket 85cCpa6O0h2axK8LAAAK ","timestamp":"2015-06-30T07:56:05.745Z"}
+{"level":"info","message":"   PLUGIN     : default Client Reconnect (1)[Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0] socketid=3I84swd-k3bNrrQnAAAM 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:56:07.146Z"}
+{"level":"info","message":"   PLUGIN     : default Number clients in session : 2 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:56:07.146Z"}
+{"level":"info","message":"   PLUGIN     : default New client (1) wait... 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:56:07.146Z"}
+{"type":"API","session":"default","level":"warn","message":"   API : No client in session default","timestamp":"2015-06-30T07:56:20.612Z"}
+{"level":"info","message":"   DASHBOARD  : default New Dashboard 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:56:21.791Z"}
+{"level":"info","message":"   DASHBOARD  : default Client selected for :ddc19560-9771-4896-82c0-4fe8432d955b 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:56:21.791Z"}
+{"level":"error","message":"  DASHBOARD  : default No client for message DOM:setSettings 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:56:22.025Z"}
+{"level":"error","message":"  DASHBOARD  : default No client for message DOM:getMutationObeserverAvailability 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:56:22.026Z"}
+{"level":"info","message":"   PLUGIN     : default Send Refresh clientlist to dashboard (0)[Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0] socketid = 8r5X2lVhSrgDi_fgAAAQ 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:56:26.648Z"}
+{"level":"info","message":"   PLUGIN     : default New client (0)[Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0] socketid = 8r5X2lVhSrgDi_fgAAAQ 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:56:26.651Z"}
+{"level":"info","message":"   PLUGIN     : default Number clients in session : 1 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:56:26.651Z"}
+{"level":"info","message":"   PLUGIN     : default New client (0) wait... 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:56:26.651Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 1 in session default","timestamp":"2015-06-30T07:56:27.217Z"}
+{"level":"info","message":"   PLUGIN     : default Send RefreshClients to Dashboard 8r5X2lVhSrgDi_fgAAAQ 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:59:41.577Z"}
+{"level":"info","message":"   PLUGIN     : default Client Close 8r5X2lVhSrgDi_fgAAAQ 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:59:41.578Z"}
+{"level":"info","message":"   PLUGIN     : Delete client socket 8r5X2lVhSrgDi_fgAAAQ ","timestamp":"2015-06-30T07:59:41.585Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 0 in session default","timestamp":"2015-06-30T07:59:41.692Z"}
+{"level":"info","message":"   PLUGIN     : default Send Refresh clientlist to dashboard (0)[Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0] socketid = DlD7qR8W-zzZ-N7lAAAS 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:59:45.002Z"}
+{"level":"info","message":"   PLUGIN     : default New client (0)[Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0] socketid = DlD7qR8W-zzZ-N7lAAAS 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:59:45.002Z"}
+{"level":"info","message":"   PLUGIN     : default Number clients in session : 1 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:59:45.003Z"}
+{"level":"info","message":"   PLUGIN     : default New client (0) wait... 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T07:59:45.003Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 1 in session default","timestamp":"2015-06-30T07:59:45.255Z"}
+{"level":"info","message":"   PLUGIN     : default Send RefreshClients to Dashboard DlD7qR8W-zzZ-N7lAAAS 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:01:23.257Z"}
+{"level":"info","message":"   PLUGIN     : default Client Close DlD7qR8W-zzZ-N7lAAAS 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:01:23.258Z"}
+{"level":"info","message":"   PLUGIN     : Delete client socket DlD7qR8W-zzZ-N7lAAAS ","timestamp":"2015-06-30T08:01:23.261Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 0 in session default","timestamp":"2015-06-30T08:01:23.351Z"}
+{"level":"info","message":"   PLUGIN     : default Send Refresh clientlist to dashboard (0)[Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0] socketid = _zOjdTrafKF7Hn42AAAU 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:01:26.024Z"}
+{"level":"info","message":"   PLUGIN     : default New client (0)[Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0] socketid = _zOjdTrafKF7Hn42AAAU 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:01:26.025Z"}
+{"level":"info","message":"   PLUGIN     : default Number clients in session : 1 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:01:26.025Z"}
+{"level":"info","message":"   PLUGIN     : default New client (0) wait... 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:01:26.025Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 1 in session default","timestamp":"2015-06-30T08:01:26.223Z"}
+{"level":"info","message":"   PLUGIN     : default Send RefreshClients to Dashboard _zOjdTrafKF7Hn42AAAU 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:03:07.726Z"}
+{"level":"info","message":"   PLUGIN     : default Client Close _zOjdTrafKF7Hn42AAAU 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:03:07.727Z"}
+{"level":"info","message":"   PLUGIN     : Delete client socket _zOjdTrafKF7Hn42AAAU ","timestamp":"2015-06-30T08:03:07.730Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 0 in session default","timestamp":"2015-06-30T08:03:07.840Z"}
+{"level":"info","message":"   PLUGIN     : default Send Refresh clientlist to dashboard (0)[Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0] socketid = ceSVmmk_8fFEFCAxAAAW 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:03:10.994Z"}
+{"level":"info","message":"   PLUGIN     : default New client (0)[Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0] socketid = ceSVmmk_8fFEFCAxAAAW 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:03:10.995Z"}
+{"level":"info","message":"   PLUGIN     : default Number clients in session : 1 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:03:10.995Z"}
+{"level":"info","message":"   PLUGIN     : default New client (0) wait... 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:03:10.996Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 1 in session default","timestamp":"2015-06-30T08:03:11.876Z"}
+{"level":"info","message":"   PLUGIN     : default Send RefreshClients to Dashboard ceSVmmk_8fFEFCAxAAAW 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:03:49.107Z"}
+{"level":"info","message":"   PLUGIN     : default Client Close ceSVmmk_8fFEFCAxAAAW 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:03:49.107Z"}
+{"level":"info","message":"   PLUGIN     : Delete client socket ceSVmmk_8fFEFCAxAAAW ","timestamp":"2015-06-30T08:03:49.112Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 0 in session default","timestamp":"2015-06-30T08:03:49.182Z"}
+{"level":"info","message":"   PLUGIN     : default Send Refresh clientlist to dashboard (0)[Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0] socketid = DuhtC1k9UezxxaGrAAAY 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:03:52.844Z"}
+{"level":"info","message":"   PLUGIN     : default New client (0)[Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0] socketid = DuhtC1k9UezxxaGrAAAY 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:03:52.845Z"}
+{"level":"info","message":"   PLUGIN     : default Number clients in session : 1 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:03:52.845Z"}
+{"level":"info","message":"   PLUGIN     : default New client (0) wait... 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:03:52.845Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 1 in session default","timestamp":"2015-06-30T08:03:53.021Z"}
+{"level":"info","message":"   PLUGIN     : default Send RefreshClients to Dashboard DuhtC1k9UezxxaGrAAAY 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:04:35.005Z"}
+{"level":"info","message":"   PLUGIN     : default Client Close DuhtC1k9UezxxaGrAAAY 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:04:35.006Z"}
+{"level":"info","message":"   PLUGIN     : Delete client socket DuhtC1k9UezxxaGrAAAY ","timestamp":"2015-06-30T08:04:35.009Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 0 in session default","timestamp":"2015-06-30T08:04:35.107Z"}
+{"level":"info","message":"   PLUGIN     : default Send Refresh clientlist to dashboard (0)[Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0] socketid = ssQK0fnYNUNhytIFAAAa 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:04:37.496Z"}
+{"level":"info","message":"   PLUGIN     : default New client (0)[Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0] socketid = ssQK0fnYNUNhytIFAAAa 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:04:37.497Z"}
+{"level":"info","message":"   PLUGIN     : default Number clients in session : 1 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:04:37.497Z"}
+{"level":"info","message":"   PLUGIN     : default New client (0) wait... 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:04:37.497Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 1 in session default","timestamp":"2015-06-30T08:04:37.673Z"}
+{"level":"info","message":"   DASHBOARD  : default Identify clients 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:06:39.970Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 0 to socketid : ssQK0fnYNUNhytIFAAAa 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:06:39.971Z"}
+{"level":"info","message":"   DASHBOARD  : default Send 0 identify(s) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:06:39.971Z"}
+{"level":"info","message":"   DASHBOARD  : Delete dashboard default socket CKQJqhjtT1JZON2HAAAO ","timestamp":"2015-06-30T08:06:47.209Z"}
+{"type":"API","session":"default","level":"warn","message":"   API : No client in session default","timestamp":"2015-06-30T08:06:47.998Z"}
+{"level":"info","message":"   DASHBOARD  : default New Dashboard 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:06:48.781Z"}
+{"level":"info","message":"   DASHBOARD  : default Client selected for :ddc19560-9771-4896-82c0-4fe8432d955b 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:06:48.782Z"}
+{"level":"error","message":"  DASHBOARD  : default No client for message DOM:setSettings 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:06:48.932Z"}
+{"level":"error","message":"  DASHBOARD  : default No client for message DOM:getMutationObeserverAvailability 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:06:48.935Z"}
+{"level":"info","message":"   PLUGIN     : default Send Refresh clientlist to dashboard (0)[Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0] socketid = EDcLn1mb2UZw5gnkAAAe 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:07:03.498Z"}
+{"level":"info","message":"   PLUGIN     : default New client (0)[Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0] socketid = EDcLn1mb2UZw5gnkAAAe 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:07:03.499Z"}
+{"level":"info","message":"   PLUGIN     : default Number clients in session : 1 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:07:03.499Z"}
+{"level":"info","message":"   PLUGIN     : default New client (0) wait... 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:07:03.499Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 1 in session default","timestamp":"2015-06-30T08:07:03.978Z"}
+{"level":"info","message":"   DASHBOARD  : default Identify clients 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:07:09.042Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 0 to socketid : EDcLn1mb2UZw5gnkAAAe 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:07:09.043Z"}
+{"level":"info","message":"   DASHBOARD  : default Send 0 identify(s) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:07:09.043Z"}
+{"level":"info","message":"   DASHBOARD  : Delete dashboard default socket pA9CXiHkb96VZGwhAAAc ","timestamp":"2015-06-30T08:07:40.525Z"}
+{"type":"API","session":"default","level":"warn","message":"   API : No client in session default","timestamp":"2015-06-30T08:07:41.280Z"}
+{"level":"info","message":"   DASHBOARD  : default New Dashboard 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:07:42.330Z"}
+{"level":"info","message":"   DASHBOARD  : default Client selected for :ddc19560-9771-4896-82c0-4fe8432d955b 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:07:42.330Z"}
+{"level":"error","message":"  DASHBOARD  : default No client for message DOM:setSettings 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:07:42.517Z"}
+{"level":"error","message":"  DASHBOARD  : default No client for message DOM:getMutationObeserverAvailability 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:07:42.518Z"}
+{"level":"info","message":"   PLUGIN     : default Send Refresh clientlist to dashboard (0)[Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0] socketid = Mob3v16CaxkTlYRmAAAi 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:08:41.351Z"}
+{"level":"info","message":"   PLUGIN     : default New client (0)[Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0] socketid = Mob3v16CaxkTlYRmAAAi 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:08:41.352Z"}
+{"level":"info","message":"   PLUGIN     : default Number clients in session : 1 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:08:41.352Z"}
+{"level":"info","message":"   PLUGIN     : default New client (0) wait... 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:08:41.353Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 1 in session default","timestamp":"2015-06-30T08:08:41.785Z"}
+{"level":"info","message":"   PLUGIN     : default Send RefreshClients to Dashboard Mob3v16CaxkTlYRmAAAi 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:09:27.462Z"}
+{"level":"info","message":"   PLUGIN     : default Client Close Mob3v16CaxkTlYRmAAAi 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:09:27.463Z"}
+{"level":"info","message":"   PLUGIN     : Delete client socket Mob3v16CaxkTlYRmAAAi ","timestamp":"2015-06-30T08:09:27.466Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 0 in session default","timestamp":"2015-06-30T08:09:27.500Z"}
+{"level":"info","message":"   PLUGIN     : default Send Refresh clientlist to dashboard (0)[Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0] socketid = ODs9rflybyE-bBFhAAAk 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:09:28.984Z"}
+{"level":"info","message":"   PLUGIN     : default New client (0)[Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0] socketid = ODs9rflybyE-bBFhAAAk 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:09:28.985Z"}
+{"level":"info","message":"   PLUGIN     : default Number clients in session : 1 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:09:28.985Z"}
+{"level":"info","message":"   PLUGIN     : default New client (0) wait... 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:09:28.986Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 1 in session default","timestamp":"2015-06-30T08:09:29.233Z"}
+{"level":"info","message":"   PLUGIN     : default Send RefreshClients to Dashboard ODs9rflybyE-bBFhAAAk 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:09:42.783Z"}
+{"level":"info","message":"   PLUGIN     : default Client Close ODs9rflybyE-bBFhAAAk 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:09:42.784Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 0 in session default","timestamp":"2015-06-30T08:09:42.834Z"}
+{"level":"info","message":"   PLUGIN     : default Send Refresh clientlist to dashboard (0)[Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0] socketid = E5VC2ETXyqiVcxbEAAAm 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:09:49.904Z"}
+{"level":"info","message":"   PLUGIN     : default New client (0)[Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0] socketid = E5VC2ETXyqiVcxbEAAAm 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:09:49.904Z"}
+{"level":"info","message":"   PLUGIN     : default Number clients in session : 1 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:09:49.905Z"}
+{"level":"info","message":"   PLUGIN     : default New client (0) wait... 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:09:49.905Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 1 in session default","timestamp":"2015-06-30T08:09:50.576Z"}
+{"level":"info","message":"   DASHBOARD  : Delete dashboard default socket Wt1Jd7oSPl9wrxT9AAAg ","timestamp":"2015-06-30T08:15:16.991Z"}
+{"type":"API","session":"default","level":"warn","message":"   API : No client in session default","timestamp":"2015-06-30T08:15:17.690Z"}
+{"level":"info","message":"   DASHBOARD  : default New Dashboard 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:15:18.543Z"}
+{"level":"info","message":"   DASHBOARD  : default Client selected for :ddc19560-9771-4896-82c0-4fe8432d955b 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:15:18.543Z"}
+{"level":"error","message":"  DASHBOARD  : default No client for message DOM:setSettings 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:15:18.680Z"}
+{"level":"error","message":"  DASHBOARD  : default No client for message DOM:getMutationObeserverAvailability 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:15:18.681Z"}
+{"level":"info","message":"   PLUGIN     : default Send Refresh clientlist to dashboard (0)[Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0] socketid = VYQ1oakHZjkP02LNAAAq 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:16:05.197Z"}
+{"level":"info","message":"   PLUGIN     : default New client (0)[Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0] socketid = VYQ1oakHZjkP02LNAAAq 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:16:05.198Z"}
+{"level":"info","message":"   PLUGIN     : default Number clients in session : 1 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:16:05.198Z"}
+{"level":"info","message":"   PLUGIN     : default New client (0) wait... 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:16:05.199Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 1 in session default","timestamp":"2015-06-30T08:16:05.287Z"}
+{"level":"info","message":"   DASHBOARD  : Delete dashboard default socket V0nTaXhysWNI1F1PAAAo ","timestamp":"2015-06-30T08:16:44.451Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 1 in session default","timestamp":"2015-06-30T08:16:45.242Z"}
+{"level":"info","message":"   DASHBOARD  : default New Dashboard 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:16:45.883Z"}
+{"level":"info","message":"   DASHBOARD  : default Client selected for :ddc19560-9771-4896-82c0-4fe8432d955b 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:16:45.884Z"}
+{"level":"info","message":"   DASHBOARD  : default Change currentClient 3c131a05-f3ce-4963-b535-1328124db529 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:16:45.884Z"}
+{"level":"info","message":"   DASHBOARD  : default Wait for socketid (VYQ1oakHZjkP02LNAAAq) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:16:45.884Z"}
+{"level":"info","message":"   DASHBOARD  : default Send helo to Dashboard 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:16:45.885Z"}
+{"level":"info","message":"   PLUGIN     : default Send Refresh clientlist to dashboard (1)[Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0] socketid = vdbQMo3aQ4pZxuA9AAAu ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T08:19:29.877Z"}
+{"level":"info","message":"   PLUGIN     : default New client (1)[Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0] socketid = vdbQMo3aQ4pZxuA9AAAu ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T08:19:29.878Z"}
+{"level":"info","message":"   PLUGIN     : default Number clients in session : 2 ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T08:19:29.878Z"}
+{"level":"info","message":"   PLUGIN     : default Send helo to client to open socket : ddc19560-9771-4896-82c0-4fe8432d955b ddc19560-9771-4896-82c0-4fe8432d955b","timestamp":"2015-06-30T08:19:29.878Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 2 in session default","timestamp":"2015-06-30T08:19:30.337Z"}
+{"level":"info","message":"   PLUGIN     : Delete client socket vdbQMo3aQ4pZxuA9AAAu ","timestamp":"2015-06-30T08:19:31.783Z"}
+{"level":"info","message":"   PLUGIN     : default Send Refresh clientlist to dashboard (2)[Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0] socketid = ZjJP67SdqZ_bhs-7AAAx 436ddbd5-b86c-4ed1-9c03-9ca6c422d785","timestamp":"2015-06-30T08:19:57.537Z"}
+{"level":"info","message":"   PLUGIN     : default New client (2)[Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0] socketid = ZjJP67SdqZ_bhs-7AAAx 436ddbd5-b86c-4ed1-9c03-9ca6c422d785","timestamp":"2015-06-30T08:19:57.537Z"}
+{"level":"info","message":"   PLUGIN     : default Number clients in session : 3 436ddbd5-b86c-4ed1-9c03-9ca6c422d785","timestamp":"2015-06-30T08:19:57.538Z"}
+{"level":"info","message":"   PLUGIN     : default New client (2) wait... 436ddbd5-b86c-4ed1-9c03-9ca6c422d785","timestamp":"2015-06-30T08:19:57.538Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 2 in session default","timestamp":"2015-06-30T08:19:57.546Z"}
+{"level":"info","message":"   PLUGIN     : default Send Refresh clientlist to dashboard (3)[Mozilla/5.0 (Android; Mobile; rv:34.0) Gecko/34.0 Firefox/34.0] socketid = wue24oYI5i8O80rGAAAy a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:20:02.534Z"}
+{"level":"info","message":"   PLUGIN     : default New client (3)[Mozilla/5.0 (Android; Mobile; rv:34.0) Gecko/34.0 Firefox/34.0] socketid = wue24oYI5i8O80rGAAAy a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:20:02.534Z"}
+{"level":"info","message":"   PLUGIN     : default Number clients in session : 4 a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:20:02.535Z"}
+{"level":"info","message":"   PLUGIN     : default New client (3) wait... a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:20:02.535Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 3 in session default","timestamp":"2015-06-30T08:20:02.544Z"}
+{"level":"info","message":"   DASHBOARD  : Delete dashboard default socket LbmjXX-JzNbpvhetAAAs ","timestamp":"2015-06-30T08:20:04.974Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 3 in session default","timestamp":"2015-06-30T08:20:05.915Z"}
+{"level":"info","message":"   DASHBOARD  : default New Dashboard 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:20:06.859Z"}
+{"level":"info","message":"   DASHBOARD  : default Client selected for :a7e65db1-eb0e-4627-b260-a7f6f37eea78 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:20:06.890Z"}
+{"level":"info","message":"   DASHBOARD  : default Change currentClient 3c131a05-f3ce-4963-b535-1328124db529 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:20:06.891Z"}
+{"level":"info","message":"   DASHBOARD  : default Wait for socketid (VYQ1oakHZjkP02LNAAAq) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:20:06.895Z"}
+{"level":"info","message":"   DASHBOARD  : default Wait for socketid (vdbQMo3aQ4pZxuA9AAAu) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:20:06.895Z"}
+{"level":"info","message":"   DASHBOARD  : default Wait for socketid (ZjJP67SdqZ_bhs-7AAAx) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:20:06.895Z"}
+{"level":"info","message":"   DASHBOARD  : default Send helo to socketid :wue24oYI5i8O80rGAAAy 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:20:06.895Z"}
+{"level":"info","message":"   DASHBOARD  : default Send helo to Dashboard 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:20:06.896Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD CONSOLE:clear a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:20:06.950Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:setSettings 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:20:07.119Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:getMutationObeserverAvailability 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:20:07.120Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD DOM:init a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:20:08.870Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD MODERNIZR a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:20:08.877Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD OBJEXPLORER a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:20:08.892Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD XHRPANEL:state a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:20:08.893Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD CONSOLE:entries a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:20:08.898Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD DOM:mutationObeserverAvailability a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:20:08.899Z"}
+{"level":"info","message":"   DASHBOARD  : default Identify clients 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:20:10.956Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 0 to socketid : VYQ1oakHZjkP02LNAAAq 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:20:10.956Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 2 to socketid : ZjJP67SdqZ_bhs-7AAAx 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:20:10.957Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 3 to socketid : wue24oYI5i8O80rGAAAy 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:20:10.958Z"}
+{"level":"info","message":"   DASHBOARD  : default Send 3 identify(s) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:20:10.958Z"}
+{"level":"info","message":"   PLUGIN     : default Send Refresh clientlist to dashboard (4)[Mozilla/5.0 (Linux; Android 4.2.2; SM-T110 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.111 Safari/537.36] socketid = 6kZantqoFrhx6hu0AAA2 b291efbb-5d36-4394-ac2e-85a0fd548704","timestamp":"2015-06-30T08:20:39.040Z"}
+{"level":"info","message":"   PLUGIN     : default New client (4)[Mozilla/5.0 (Linux; Android 4.2.2; SM-T110 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.111 Safari/537.36] socketid = 6kZantqoFrhx6hu0AAA2 b291efbb-5d36-4394-ac2e-85a0fd548704","timestamp":"2015-06-30T08:20:39.041Z"}
+{"level":"info","message":"   PLUGIN     : default Number clients in session : 5 b291efbb-5d36-4394-ac2e-85a0fd548704","timestamp":"2015-06-30T08:20:39.041Z"}
+{"level":"info","message":"   PLUGIN     : default New client (4) wait... b291efbb-5d36-4394-ac2e-85a0fd548704","timestamp":"2015-06-30T08:20:39.041Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 4 in session default","timestamp":"2015-06-30T08:20:39.049Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:select 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:21:18.993Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:unselect 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:21:19.030Z"}
+{"level":"info","message":"   PLUGIN     : default Send RefreshClients to Dashboard VYQ1oakHZjkP02LNAAAq 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:21:27.359Z"}
+{"level":"info","message":"   PLUGIN     : default Client Close VYQ1oakHZjkP02LNAAAq 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:21:27.359Z"}
+{"level":"info","message":"   PLUGIN     : Delete client socket VYQ1oakHZjkP02LNAAAq ","timestamp":"2015-06-30T08:21:27.363Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 3 in session default","timestamp":"2015-06-30T08:21:27.415Z"}
+{"level":"info","message":"   PLUGIN     : default Client Reconnect (0)[Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0] socketid=gD8MXvHymbDh1obMAAA4 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:21:28.315Z"}
+{"level":"info","message":"   PLUGIN     : default Number clients in session : 5 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:21:28.315Z"}
+{"level":"info","message":"   PLUGIN     : default New client (0) wait... 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:21:28.315Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 4 in session default","timestamp":"2015-06-30T08:21:28.373Z"}
+{"level":"info","message":"   DASHBOARD  : default Identify clients 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:22:27.777Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 0 to socketid : gD8MXvHymbDh1obMAAA4 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:22:27.778Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 2 to socketid : ZjJP67SdqZ_bhs-7AAAx 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:22:27.778Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 3 to socketid : wue24oYI5i8O80rGAAAy 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:22:27.779Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 4 to socketid : 6kZantqoFrhx6hu0AAA2 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:22:27.780Z"}
+{"level":"info","message":"   DASHBOARD  : default Send 4 identify(s) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:22:27.782Z"}
+{"level":"info","message":"   DASHBOARD  : default Identify clients 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:22:42.843Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 0 to socketid : gD8MXvHymbDh1obMAAA4 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:22:42.843Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 2 to socketid : ZjJP67SdqZ_bhs-7AAAx 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:22:42.844Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 3 to socketid : wue24oYI5i8O80rGAAAy 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:22:42.844Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 4 to socketid : 6kZantqoFrhx6hu0AAA2 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:22:42.845Z"}
+{"level":"info","message":"   DASHBOARD  : default Send 4 identify(s) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:22:42.845Z"}
+{"level":"info","message":"   PLUGIN     : Delete client socket 6kZantqoFrhx6hu0AAA2 ","timestamp":"2015-06-30T08:28:18.457Z"}
+{"level":"info","message":"   PLUGIN     : default Send RefreshClients to Dashboard wue24oYI5i8O80rGAAAy a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:29:27.689Z"}
+{"level":"info","message":"   PLUGIN     : default Client Close wue24oYI5i8O80rGAAAy a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:29:27.690Z"}
+{"level":"info","message":"   PLUGIN     : Delete client socket wue24oYI5i8O80rGAAAy ","timestamp":"2015-06-30T08:29:27.699Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 2 in session default","timestamp":"2015-06-30T08:29:27.705Z"}
+{"level":"info","message":"   PLUGIN     : default Client Reconnect (3)[Mozilla/5.0 (Android; Mobile; rv:34.0) Gecko/34.0 Firefox/34.0] socketid=n5sPwmrFILy7MNyPAAA6 a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:29:28.701Z"}
+{"level":"info","message":"   PLUGIN     : default Number clients in session : 5 a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:29:28.701Z"}
+{"level":"info","message":"   PLUGIN     : default Send helo to client to open socket : a7e65db1-eb0e-4627-b260-a7f6f37eea78 a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:29:28.701Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 3 in session default","timestamp":"2015-06-30T08:29:28.709Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD CONSOLE:clear a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:29:31.927Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD DOM:init a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:29:31.941Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD MODERNIZR a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:29:31.944Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD OBJEXPLORER a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:29:31.963Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD XHRPANEL:state a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:29:31.965Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD CONSOLE:entries a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:29:31.966Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD OBJEXPLORER a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:29:31.991Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD RESOURCES a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:29:32.005Z"}
+{"level":"info","message":"   DASHBOARD  : default Identify clients 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:29:45.314Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 0 to socketid : gD8MXvHymbDh1obMAAA4 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:29:45.317Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 2 to socketid : ZjJP67SdqZ_bhs-7AAAx 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:29:45.324Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 3 to socketid : n5sPwmrFILy7MNyPAAA6 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:29:45.325Z"}
+{"level":"info","message":"   DASHBOARD  : default Send 4 identify(s) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:29:45.325Z"}
+{"level":"info","message":"   PLUGIN     : default Client Reconnect (4)[Mozilla/5.0 (Linux; Android 4.2.2; SM-T110 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.111 Safari/537.36] socketid=fk9h7vEs2Qb9HYtiAAA8 b291efbb-5d36-4394-ac2e-85a0fd548704","timestamp":"2015-06-30T08:29:55.744Z"}
+{"level":"info","message":"   PLUGIN     : default Number clients in session : 5 b291efbb-5d36-4394-ac2e-85a0fd548704","timestamp":"2015-06-30T08:29:55.745Z"}
+{"level":"info","message":"   PLUGIN     : default New client (4) wait... b291efbb-5d36-4394-ac2e-85a0fd548704","timestamp":"2015-06-30T08:29:55.745Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 4 in session default","timestamp":"2015-06-30T08:29:55.751Z"}
+{"level":"info","message":"   DASHBOARD  : default Identify clients 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:29:56.677Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 0 to socketid : gD8MXvHymbDh1obMAAA4 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:29:56.677Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 2 to socketid : ZjJP67SdqZ_bhs-7AAAx 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:29:56.678Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 3 to socketid : n5sPwmrFILy7MNyPAAA6 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:29:56.678Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 4 to socketid : fk9h7vEs2Qb9HYtiAAA8 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:29:56.679Z"}
+{"level":"info","message":"   DASHBOARD  : default Send 4 identify(s) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:29:56.679Z"}
+{"level":"info","message":"   DASHBOARD  : default Identify clients 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:29:58.215Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 0 to socketid : gD8MXvHymbDh1obMAAA4 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:29:58.216Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 2 to socketid : ZjJP67SdqZ_bhs-7AAAx 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:29:58.217Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 3 to socketid : n5sPwmrFILy7MNyPAAA6 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:29:58.217Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 4 to socketid : fk9h7vEs2Qb9HYtiAAA8 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:29:58.217Z"}
+{"level":"info","message":"   DASHBOARD  : default Send 4 identify(s) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:29:58.218Z"}
+{"level":"info","message":"   DASHBOARD  : default Identify clients 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:00.658Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 0 to socketid : gD8MXvHymbDh1obMAAA4 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:00.659Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 2 to socketid : ZjJP67SdqZ_bhs-7AAAx 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:00.660Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 3 to socketid : n5sPwmrFILy7MNyPAAA6 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:00.660Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 4 to socketid : fk9h7vEs2Qb9HYtiAAA8 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:00.661Z"}
+{"level":"info","message":"   DASHBOARD  : default Send 4 identify(s) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:00.661Z"}
+{"level":"info","message":"   PLUGIN     : default Client Reconnect (3)[Mozilla/5.0 (Android; Mobile; rv:34.0) Gecko/34.0 Firefox/34.0] socketid=v47X-Ea25eJJmxdCAAA- a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:30:04.255Z"}
+{"level":"info","message":"   PLUGIN     : default Number clients in session : 5 a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:30:04.255Z"}
+{"level":"info","message":"   PLUGIN     : default Send helo to client to open socket : a7e65db1-eb0e-4627-b260-a7f6f37eea78 a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:30:04.255Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 4 in session default","timestamp":"2015-06-30T08:30:04.263Z"}
+{"level":"info","message":"   DASHBOARD  : default Identify clients 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:05.634Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 0 to socketid : gD8MXvHymbDh1obMAAA4 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:05.635Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 2 to socketid : ZjJP67SdqZ_bhs-7AAAx 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:05.636Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 3 to socketid : v47X-Ea25eJJmxdCAAA- 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:05.636Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 4 to socketid : fk9h7vEs2Qb9HYtiAAA8 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:05.636Z"}
+{"level":"info","message":"   DASHBOARD  : default Send 4 identify(s) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:05.636Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD CONSOLE:clear a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:30:07.422Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD DOM:init a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:30:07.432Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD MODERNIZR a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:30:07.437Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD OBJEXPLORER a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:30:07.458Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD XHRPANEL:state a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:30:07.459Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD CONSOLE:entries a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:30:07.460Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD OBJEXPLORER a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:30:07.469Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD RESOURCES a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:30:07.498Z"}
+{"level":"info","message":"   DASHBOARD  : default Identify clients 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:16.581Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 0 to socketid : gD8MXvHymbDh1obMAAA4 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:16.582Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 2 to socketid : ZjJP67SdqZ_bhs-7AAAx 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:16.583Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 3 to socketid : v47X-Ea25eJJmxdCAAA- 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:16.583Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 4 to socketid : fk9h7vEs2Qb9HYtiAAA8 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:16.583Z"}
+{"level":"info","message":"   DASHBOARD  : default Send 4 identify(s) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:16.584Z"}
+{"level":"info","message":"   PLUGIN     : default Client Reconnect (3)[Mozilla/5.0 (Android; Mobile; rv:34.0) Gecko/34.0 Firefox/34.0] socketid=GIQ9ozswyjCFRekBAABA a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:30:22.629Z"}
+{"level":"info","message":"   PLUGIN     : default Number clients in session : 5 a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:30:22.629Z"}
+{"level":"info","message":"   PLUGIN     : default Send helo to client to open socket : a7e65db1-eb0e-4627-b260-a7f6f37eea78 a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:30:22.629Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 4 in session default","timestamp":"2015-06-30T08:30:22.636Z"}
+{"level":"info","message":"   DASHBOARD  : default Identify clients 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:24.893Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 0 to socketid : gD8MXvHymbDh1obMAAA4 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:24.893Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 2 to socketid : ZjJP67SdqZ_bhs-7AAAx 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:24.894Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 3 to socketid : GIQ9ozswyjCFRekBAABA 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:24.894Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 4 to socketid : fk9h7vEs2Qb9HYtiAAA8 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:24.895Z"}
+{"level":"info","message":"   DASHBOARD  : default Send 4 identify(s) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:24.895Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD CONSOLE:clear a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:30:25.702Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD DOM:init a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:30:25.705Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD MODERNIZR a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:30:25.707Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD OBJEXPLORER a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:30:25.712Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD XHRPANEL:state a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:30:25.714Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD CONSOLE:entries a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:30:25.715Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD OBJEXPLORER a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:30:25.720Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD RESOURCES a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:30:25.765Z"}
+{"level":"info","message":"   DASHBOARD  : default Identify clients 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:28.655Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 0 to socketid : gD8MXvHymbDh1obMAAA4 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:28.655Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 2 to socketid : ZjJP67SdqZ_bhs-7AAAx 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:28.656Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 3 to socketid : GIQ9ozswyjCFRekBAABA 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:28.656Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 4 to socketid : fk9h7vEs2Qb9HYtiAAA8 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:28.657Z"}
+{"level":"info","message":"   DASHBOARD  : default Send 4 identify(s) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:28.657Z"}
+{"level":"info","message":"   DASHBOARD  : default Identify clients 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:34.050Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 0 to socketid : gD8MXvHymbDh1obMAAA4 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:34.050Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 2 to socketid : ZjJP67SdqZ_bhs-7AAAx 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:34.051Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 3 to socketid : GIQ9ozswyjCFRekBAABA 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:34.051Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 4 to socketid : fk9h7vEs2Qb9HYtiAAA8 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:34.052Z"}
+{"level":"info","message":"   DASHBOARD  : default Send 4 identify(s) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:34.052Z"}
+{"level":"info","message":"   DASHBOARD  : Delete dashboard default socket ci6042VgNP3YmbUmAAA0 ","timestamp":"2015-06-30T08:30:39.807Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 4 in session default","timestamp":"2015-06-30T08:30:40.871Z"}
+{"level":"info","message":"   DASHBOARD  : default New Dashboard 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:42.182Z"}
+{"level":"info","message":"   DASHBOARD  : default Client selected for :b291efbb-5d36-4394-ac2e-85a0fd548704 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:42.182Z"}
+{"level":"info","message":"   DASHBOARD  : default Change currentClient 3c131a05-f3ce-4963-b535-1328124db529 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:42.184Z"}
+{"level":"info","message":"   DASHBOARD  : default Wait for socketid (gD8MXvHymbDh1obMAAA4) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:42.184Z"}
+{"level":"info","message":"   DASHBOARD  : default Wait for socketid (vdbQMo3aQ4pZxuA9AAAu) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:42.184Z"}
+{"level":"info","message":"   DASHBOARD  : default Wait for socketid (ZjJP67SdqZ_bhs-7AAAx) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:42.184Z"}
+{"level":"info","message":"   DASHBOARD  : default Wait for socketid (GIQ9ozswyjCFRekBAABA) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:42.186Z"}
+{"level":"info","message":"   DASHBOARD  : default Send helo to socketid :fk9h7vEs2Qb9HYtiAAA8 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:42.186Z"}
+{"level":"info","message":"   DASHBOARD  : default Send helo to Dashboard 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:42.191Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD CONSOLE:clear b291efbb-5d36-4394-ac2e-85a0fd548704","timestamp":"2015-06-30T08:30:42.269Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:setSettings 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:42.576Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:getMutationObeserverAvailability 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:30:42.577Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD DOM:init b291efbb-5d36-4394-ac2e-85a0fd548704","timestamp":"2015-06-30T08:30:44.444Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD MODERNIZR b291efbb-5d36-4394-ac2e-85a0fd548704","timestamp":"2015-06-30T08:30:44.447Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD OBJEXPLORER b291efbb-5d36-4394-ac2e-85a0fd548704","timestamp":"2015-06-30T08:30:44.472Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD XHRPANEL:state b291efbb-5d36-4394-ac2e-85a0fd548704","timestamp":"2015-06-30T08:30:44.473Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD NETWORK b291efbb-5d36-4394-ac2e-85a0fd548704","timestamp":"2015-06-30T08:30:44.477Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD RESOURCES b291efbb-5d36-4394-ac2e-85a0fd548704","timestamp":"2015-06-30T08:30:44.479Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD CONSOLE:entries b291efbb-5d36-4394-ac2e-85a0fd548704","timestamp":"2015-06-30T08:30:44.480Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD DOM:mutationObeserverAvailability b291efbb-5d36-4394-ac2e-85a0fd548704","timestamp":"2015-06-30T08:30:44.485Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD OBJEXPLORER b291efbb-5d36-4394-ac2e-85a0fd548704","timestamp":"2015-06-30T08:30:48.199Z"}
+{"level":"info","message":"   DASHBOARD  : Delete dashboard default socket EkRdM7Iq9aJDVffgAABC ","timestamp":"2015-06-30T08:31:12.729Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 4 in session default","timestamp":"2015-06-30T08:31:13.346Z"}
+{"level":"info","message":"   DASHBOARD  : default New Dashboard 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:31:14.226Z"}
+{"level":"info","message":"   DASHBOARD  : default Client selected for :a7e65db1-eb0e-4627-b260-a7f6f37eea78 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:31:14.227Z"}
+{"level":"info","message":"   DASHBOARD  : default Change currentClient 3c131a05-f3ce-4963-b535-1328124db529 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:31:14.227Z"}
+{"level":"info","message":"   DASHBOARD  : default Wait for socketid (gD8MXvHymbDh1obMAAA4) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:31:14.227Z"}
+{"level":"info","message":"   DASHBOARD  : default Wait for socketid (vdbQMo3aQ4pZxuA9AAAu) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:31:14.227Z"}
+{"level":"info","message":"   DASHBOARD  : default Wait for socketid (ZjJP67SdqZ_bhs-7AAAx) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:31:14.228Z"}
+{"level":"info","message":"   DASHBOARD  : default Send helo to socketid :GIQ9ozswyjCFRekBAABA 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:31:14.228Z"}
+{"level":"info","message":"   DASHBOARD  : default Wait for socketid (fk9h7vEs2Qb9HYtiAAA8) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:31:14.228Z"}
+{"level":"info","message":"   DASHBOARD  : default Send helo to Dashboard 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:31:14.228Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:setSettings 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:31:14.466Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:getMutationObeserverAvailability 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:31:14.467Z"}
+{"level":"info","message":"   DASHBOARD  : default Identify clients 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:31:20.165Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 0 to socketid : gD8MXvHymbDh1obMAAA4 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:31:20.166Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 2 to socketid : ZjJP67SdqZ_bhs-7AAAx 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:31:20.167Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 3 to socketid : GIQ9ozswyjCFRekBAABA 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:31:20.167Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 4 to socketid : fk9h7vEs2Qb9HYtiAAA8 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:31:20.169Z"}
+{"level":"info","message":"   DASHBOARD  : default Send 4 identify(s) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:31:20.169Z"}
+{"level":"info","message":"   DASHBOARD  : default Identify clients 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:31:36.370Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 0 to socketid : gD8MXvHymbDh1obMAAA4 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:31:36.370Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 2 to socketid : ZjJP67SdqZ_bhs-7AAAx 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:31:36.371Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 3 to socketid : GIQ9ozswyjCFRekBAABA 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:31:36.371Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 4 to socketid : fk9h7vEs2Qb9HYtiAAA8 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:31:36.372Z"}
+{"level":"info","message":"   DASHBOARD  : default Send 4 identify(s) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:31:36.372Z"}
+{"level":"info","message":"   PLUGIN     : default Client Reconnect (3)[Mozilla/5.0 (Android; Mobile; rv:34.0) Gecko/34.0 Firefox/34.0] socketid=Vfg2HcLJyurV3BC3AABG a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:31:49.066Z"}
+{"level":"info","message":"   PLUGIN     : default Number clients in session : 5 a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:31:49.066Z"}
+{"level":"info","message":"   PLUGIN     : default Send helo to client to open socket : a7e65db1-eb0e-4627-b260-a7f6f37eea78 a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:31:49.067Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 4 in session default","timestamp":"2015-06-30T08:31:49.085Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD CONSOLE:clear a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:31:51.902Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD DOM:init a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:31:51.904Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD MODERNIZR a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:31:51.908Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD OBJEXPLORER a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:31:51.919Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD XHRPANEL:state a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:31:51.919Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD CONSOLE:entries a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:31:51.921Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD OBJEXPLORER a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:31:52.295Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD RESOURCES a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:31:52.299Z"}
+{"level":"info","message":"   DASHBOARD  : default Identify clients 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:31:56.053Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 0 to socketid : gD8MXvHymbDh1obMAAA4 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:31:56.054Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 2 to socketid : ZjJP67SdqZ_bhs-7AAAx 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:31:56.055Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 3 to socketid : Vfg2HcLJyurV3BC3AABG 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:31:56.055Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 4 to socketid : fk9h7vEs2Qb9HYtiAAA8 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:31:56.056Z"}
+{"level":"info","message":"   DASHBOARD  : default Send 4 identify(s) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:31:56.056Z"}
+{"level":"info","message":"   DASHBOARD  : default Identify clients 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:32:06.920Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 0 to socketid : gD8MXvHymbDh1obMAAA4 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:32:06.920Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 2 to socketid : ZjJP67SdqZ_bhs-7AAAx 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:32:06.921Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 3 to socketid : Vfg2HcLJyurV3BC3AABG 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:32:06.921Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 4 to socketid : fk9h7vEs2Qb9HYtiAAA8 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:32:06.922Z"}
+{"level":"info","message":"   DASHBOARD  : default Send 4 identify(s) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T08:32:06.922Z"}
+{"level":"info","message":"   PLUGIN     : default Client Reconnect (3)[Mozilla/5.0 (Android; Mobile; rv:34.0) Gecko/34.0 Firefox/34.0] socketid=LJww91c5pps205oEAABI a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:32:17.406Z"}
+{"level":"info","message":"   PLUGIN     : default Number clients in session : 5 a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:32:17.407Z"}
+{"level":"info","message":"   PLUGIN     : default Send helo to client to open socket : a7e65db1-eb0e-4627-b260-a7f6f37eea78 a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:32:17.407Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 4 in session default","timestamp":"2015-06-30T08:32:17.415Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD CONSOLE:clear a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:32:20.686Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD DOM:init a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:32:20.688Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD MODERNIZR a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:32:20.690Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD OBJEXPLORER a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:32:20.702Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD XHRPANEL:state a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:32:20.704Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD CONSOLE:entries a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:32:20.707Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD OBJEXPLORER a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:32:20.714Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD RESOURCES a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:32:20.787Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD CONSOLE:entries a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T08:33:43.444Z"}
+{"level":"info","message":"   PLUGIN     : Delete client socket LJww91c5pps205oEAABI ","timestamp":"2015-06-30T08:33:45.789Z"}
+{"level":"info","message":"   PLUGIN     : Delete client socket fk9h7vEs2Qb9HYtiAAA8 ","timestamp":"2015-06-30T08:36:03.379Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD CONSOLE:entries a7e65db1-eb0e-4627-b260-a7f6f37eea78","timestamp":"2015-06-30T09:03:21.015Z"}
+{"level":"info","message":"   DASHBOARD  : default Identify clients 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T09:03:48.581Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 0 to socketid : gD8MXvHymbDh1obMAAA4 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T09:03:48.581Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 2 to socketid : ZjJP67SdqZ_bhs-7AAAx 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T09:03:48.582Z"}
+{"level":"info","message":"   DASHBOARD  : default Send 4 identify(s) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T09:03:48.582Z"}
+{"level":"info","message":"   DASHBOARD  : default Identify clients 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T09:03:51.305Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 0 to socketid : gD8MXvHymbDh1obMAAA4 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T09:03:51.306Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 2 to socketid : ZjJP67SdqZ_bhs-7AAAx 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T09:03:51.306Z"}
+{"level":"info","message":"   DASHBOARD  : default Send 4 identify(s) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T09:03:51.307Z"}
+{"level":"info","message":"   PLUGIN     : Delete client socket ZjJP67SdqZ_bhs-7AAAx ","timestamp":"2015-06-30T09:03:55.478Z"}
+{"level":"info","message":"   PLUGIN     : default Client Reconnect (2)[Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0] socketid=NlANaYYFVKM73o5rAABL 436ddbd5-b86c-4ed1-9c03-9ca6c422d785","timestamp":"2015-06-30T09:03:55.879Z"}
+{"level":"info","message":"   PLUGIN     : default Number clients in session : 5 436ddbd5-b86c-4ed1-9c03-9ca6c422d785","timestamp":"2015-06-30T09:03:55.879Z"}
+{"level":"info","message":"   PLUGIN     : default New client (2) wait... 436ddbd5-b86c-4ed1-9c03-9ca6c422d785","timestamp":"2015-06-30T09:03:55.879Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 2 in session default","timestamp":"2015-06-30T09:03:55.886Z"}
+{"level":"info","message":"   DASHBOARD  : default Identify clients 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T09:03:57.630Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 0 to socketid : gD8MXvHymbDh1obMAAA4 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T09:03:57.631Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 2 to socketid : NlANaYYFVKM73o5rAABL 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T09:03:57.632Z"}
+{"level":"info","message":"   DASHBOARD  : default Send 4 identify(s) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T09:03:57.632Z"}
+{"level":"info","message":"   DASHBOARD  : default Identify clients 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T09:07:31.412Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 0 to socketid : gD8MXvHymbDh1obMAAA4 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T09:07:31.412Z"}
+{"level":"info","message":"   DASHBOARD  : default Dashboard send identify 2 to socketid : NlANaYYFVKM73o5rAABL 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T09:07:31.413Z"}
+{"level":"info","message":"   DASHBOARD  : default Send 4 identify(s) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T09:07:31.413Z"}
+{"level":"info","message":"   DASHBOARD  : Delete dashboard default socket DnnaU8iGC28tEjQIAABE ","timestamp":"2015-06-30T09:07:35.306Z"}
+{"type":"API","session":"default","level":"info","message":"   API : GetClients nb client 2 in session default","timestamp":"2015-06-30T09:07:35.989Z"}
+{"level":"info","message":"   DASHBOARD  : default New Dashboard 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T09:07:36.906Z"}
+{"level":"info","message":"   DASHBOARD  : default Client selected for :436ddbd5-b86c-4ed1-9c03-9ca6c422d785 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T09:07:36.913Z"}
+{"level":"info","message":"   DASHBOARD  : default Change currentClient 3c131a05-f3ce-4963-b535-1328124db529 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T09:07:36.913Z"}
+{"level":"info","message":"   DASHBOARD  : default Wait for socketid (gD8MXvHymbDh1obMAAA4) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T09:07:36.914Z"}
+{"level":"info","message":"   DASHBOARD  : default Wait for socketid (vdbQMo3aQ4pZxuA9AAAu) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T09:07:36.914Z"}
+{"level":"info","message":"   DASHBOARD  : default Send helo to socketid :NlANaYYFVKM73o5rAABL 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T09:07:36.914Z"}
+{"level":"info","message":"   DASHBOARD  : default Wait for socketid (LJww91c5pps205oEAABI) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T09:07:36.915Z"}
+{"level":"info","message":"   DASHBOARD  : default Wait for socketid (fk9h7vEs2Qb9HYtiAAA8) 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T09:07:36.919Z"}
+{"level":"info","message":"   DASHBOARD  : default Send helo to Dashboard 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T09:07:36.919Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:setSettings 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T09:07:37.108Z"}
+{"level":"info","message":"   DASHBOARD  : default DASHBOARD=>PLUGIN DOM:getMutationObeserverAvailability 3c131a05-f3ce-4963-b535-1328124db529","timestamp":"2015-06-30T09:07:37.108Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD CONSOLE:clear 436ddbd5-b86c-4ed1-9c03-9ca6c422d785","timestamp":"2015-06-30T09:07:47.468Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD DOM:init 436ddbd5-b86c-4ed1-9c03-9ca6c422d785","timestamp":"2015-06-30T09:08:21.466Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD MODERNIZR 436ddbd5-b86c-4ed1-9c03-9ca6c422d785","timestamp":"2015-06-30T09:08:22.585Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD OBJEXPLORER 436ddbd5-b86c-4ed1-9c03-9ca6c422d785","timestamp":"2015-06-30T09:08:22.590Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD XHRPANEL:state 436ddbd5-b86c-4ed1-9c03-9ca6c422d785","timestamp":"2015-06-30T09:08:22.590Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD NETWORK 436ddbd5-b86c-4ed1-9c03-9ca6c422d785","timestamp":"2015-06-30T09:08:22.602Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD RESOURCES 436ddbd5-b86c-4ed1-9c03-9ca6c422d785","timestamp":"2015-06-30T09:08:22.603Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD CONSOLE:entries 436ddbd5-b86c-4ed1-9c03-9ca6c422d785","timestamp":"2015-06-30T09:08:23.504Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD OBJEXPLORER 436ddbd5-b86c-4ed1-9c03-9ca6c422d785","timestamp":"2015-06-30T09:08:23.512Z"}
+{"level":"info","message":"   PLUGIN     : default PLUGIN=>DASHBOARD DOM:mutationObeserverAvailability 436ddbd5-b86c-4ed1-9c03-9ca6c422d785","timestamp":"2015-06-30T09:08:23.564Z"}
