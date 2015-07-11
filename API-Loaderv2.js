@@ -77,7 +77,7 @@ function dataExchangeService(){
 	this.vm.filtro.genero = "Ambos";
 }
 function viewController($scope,dataExchangeService){
-	var vm = dataExchangeService.vm;
+	this.view = dataExchangeService.vm;
 }
 function cookieController($cookies,dataExchangeService){
 	var vm = dataExchangeService.vm;
@@ -89,7 +89,8 @@ function cookieController($cookies,dataExchangeService){
 	}
 }
 function filtroController($scope, $http,dataExchangeService){
-	var vm = dataExchangeService.vm;
+	this.filtro = dataExchangeService.vm.filtro;
+	var vm = dataExchangeService.vm
 	this.load = function(){
 		if(vm.first_time){
 			this.pedir(anuncio_juventud.URL + anuncio_juventud.peticion,this.filtrar);
@@ -152,12 +153,10 @@ function filtroController($scope, $http,dataExchangeService){
 		}
 		var fGaraje = vm.filtro.garaje || false;
 		var fEuros = encontrar_int(vm.filtro.precio || 100000);
-		
+		var fPrecio = true;
 		if(fEuros === 100000){
 			fPrecio = false;
 			vm.filtro.vPrecio = "";
-		}else{
-			fPrecio = true;
 		}
 		var fVisu = vm.filtro.visualizacion || false;
 		var fHabitaciones = encontrar_int(vm.filtro.habitaciones || 0);

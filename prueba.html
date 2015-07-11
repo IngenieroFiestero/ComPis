@@ -54,8 +54,8 @@
   </nav>
 </div>
 
-		<div class="jumbotron"  ng-controller="filtroController as vm" style="margin-top:30px" id="arriba">
-			<div class="container">
+		<div class="container">
+			<div class="jumbotron"  ng-controller="filtroController as vm" style="margin-top:30px" id="arriba">			
 				<div class="row">
 					<div class="col-sm-4 col-md-3 col-personalizada">
 						<div class="input-group input-personalizado input-group-sm">
@@ -112,10 +112,10 @@
 
 		<div class="container" ng-controller="viewController as vm">
 			<div class="row">
-				<div class="col-sm-6 col-md-4" ng-repeat="anuncio in vm.anuncios_filtrados">
+				<div class="col-sm-6 col-md-4" ng-repeat="anuncio in vm.view.anuncios_filtrados">
 					<div class="panel panel-default">
 					  	<div class="panel-heading header-max row">
-					  		<div class="col-xs-11">
+					  		<div class="col-xs-10">
 						  			<a href="{{anuncio.URL}}" target="_blank">{{anuncio.titulo}}
 						  				</a>
 						  			</div>
