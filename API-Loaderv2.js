@@ -88,9 +88,9 @@ function controlador($scope, $http){
 				alert("Ha fallado la petición. Estado HTTP: "+status);
 		});
 	}
+	vm.anuncios_favoritos = [];
 	vm.first_time = true;
 	vm.anuncios_filtrados= [];
-	vm.filtro = {};//Filtro de busquedas
 	vm.filtro.genero = "Ambos";
 	vm.load = function(){
 		if(vm.first_time){
@@ -100,6 +100,7 @@ function controlador($scope, $http){
 		}
 	}
 	vm.filtrar = function(){
+		//Variables con f delante tson utilizadas por el filtro
 		vm.anuncios_filtrados= [];
 		var fCompañero;
 		var fCompañera;
@@ -136,10 +137,12 @@ function controlador($scope, $http){
 				//Si filtramos por prercio
 				if(fVisu && dato.precio == false){
 					
+				}else if(dato.precio == false){
+					eliminar = true;
 				}else if(dato.euros > fEuros){
 					eliminar = true;
 				}
-			}
+			}w
 			if(fHab && dato.nHab <= fHabitaciones){
 				if(fVisu && dato.nHab === 0){
 
@@ -209,7 +212,7 @@ function filtrar(frases){
 	cb.push(function(i,j,w,callMe){
 		if(encontrados[j] === false){
 			var z = i-1;
-			while(z < i+1){
+			while(z < i+1 && encontrados[j] === false){
 				if(frase[z]){
 					var numero = encontrar_int(frase[z]);
 					if(isNaN(numero) === false){

@@ -90,6 +90,14 @@
 						</div>
 					</div>
 					<div class="col-sm-4 col-md-3 col-personalizada">
+						<div class="input-group input-group-sm">
+							<span class="input-group-addon">Solo anuncios seguidos</span>
+							<span class="input-group-addon">
+								<input type="checkbox" aria-label="..." ng-model="vm.filtro.favoritos">
+							</span>
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-3 col-personalizada">
 						<p><a class="btn btn-default" ng-click="vm.load()" role="button">Aplicar Filtro &raquo;</a></p>
 						<p><a class="btn btn-default" onClick="prueba()" role="button">Probando &raquo;</a></p>
 					</div>
@@ -101,9 +109,19 @@
 			<div class="row">
 				<div class="col-sm-6 col-md-4" ng-repeat="anuncio in vm.anuncios_filtrados">
 					<div class="panel panel-default">
-					  	<div class="panel-heading header-max"><a  href="{{anuncio.URL}}" target="_blank">{{anuncio.titulo}}</a></div>
+					  	<div class="panel-heading header-max row">
+					  		<div class="col-xs-11">
+						  			<a href="{{anuncio.URL}}" target="_blank">{{anuncio.titulo}}
+						  				</a>
+						  			</div>
+						  	<div class="col-xs-1">
+						  			<button type="button" class="btn btn-default">
+										<a class="glyphicon glyphicon-eye-open"></a>
+									</button>
+						  			</div>
+					  	</div>
 						<ul class="list-group lista-scroll">
-							<li class="list-group-item">Descripcion:  {{anuncio.descripcion}}</li>
+							<li class="list-group-item">{{anuncio.descripcion}}</li>
 						  	<li class="list-group-item">Contacto:{{anuncio.contacto}}</li>
 						  	<li class="list-group-item">Telefono: {{anuncio.telefono}}</li>
 							<li class="list-group-item">Precio:  {{anuncio.vPrecio}}</li>
