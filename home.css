@@ -11,17 +11,17 @@
 }
 .panel{
 	overflow: hidden;
-	max-height: 250px; 
+	max-height: 250px;
 	min-height: 250px;
 }
 .header-max{
-	height: 50px;
+	height: 55px;
 	overflow: hidden;
 }
 .input-personalizado{
 }
 .visor-input{
-	
+
 }
 .col-personalizada{
 	margin-top: 5px;
