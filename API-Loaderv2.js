@@ -37,20 +37,67 @@ anuncio_juventud.ver_anuncio="http://www.zaragoza.es/juventud/cipaj/anuncios/obt
 		9 "Gente"; 
 		10 "Intercambios - compartimos"; 
 	*/
-
+var fav_cook_name = "favorite";
 var estaciones_bici = {};
 estaciones_bici.URL = "http://www.zaragoza.es/api/recurso/urbanismo-infraestructuras/estacion-bicicleta";
 estaciones_bici.peticion="?start=0&rows=2000&srsname=wgs84";
 
 var descripcion_ejemplo = "Se alquila piso para estudiantes de septiembre a junio. Tres habitaciones, 2º con ascensor, amueblado, con calefacción y aire acondicionado";
-angular
-  .module('ComPiApp', [])
-  .controller("controlador", controlador);
-function controlador($scope, $http){
-	var vm = this;
-	vm.anuncio_computado = [];
-	vm.anuncio_lista = [];
-	vm.pedir = function(URL,cb){
+
+var app = angular.module('ComPiApp', ['ui.bootstrap', 'ui.router', 'ui.navbar']);
+app.controller("filtroController", filtroController);
+app.controller("viewController",viewController);
+app.controller('cookieController',cookieController);
+app.controller('NavigationController', function($scope) {
+
+  $scope.tree = [{
+    name: "La aplicacion",
+    link: "#",
+  }, {
+    name: "Desarollador",
+    link: "#",
+  }, {
+    name: "divider",
+    link: "#"
+
+  }, {
+    name: "Colabora Ayuntamiento Zaragoza",
+    link: "#"
+  }];
+});
+app.service('dataExchangeService',dataExchangeService);
+function dataExchangeService(){
+	this.vm ={};
+	this.vm.anuncio_computado = [];
+	this.vm.anuncio_lista = [];
+	this.vm.filtro = {};
+	this.vm.anuncios_favoritos = [];
+	this.vm.first_time = true;
+	this.vm.anuncios_filtrados= [];
+	this.vm.filtro.genero = "Ambos";
+}
+function viewController($scope,dataExchangeService){
+	var vm = dataExchangeService.vm;
+}
+function cookieController($cookies,dataExchangeService){
+	var vm = dataExchangeService.vm;
+	var favoriteCookie = $cookies.get(fav_cook_name);
+	if(favoriteCookie){
+		vm.anuncios_favoritos = favoriteCookie.split("-");
+	}else{
+		$cookies.put(fav_cook_name, '');
+	}
+}
+function filtroController($scope, $http,dataExchangeService){
+	var vm = dataExchangeService.vm;
+	this.load = function(){
+		if(vm.first_time){
+			this.pedir(anuncio_juventud.URL + anuncio_juventud.peticion,this.filtrar);
+		}else{
+			this.filtrar();
+		}
+	}
+	this.pedir = function(URL,cb){
 		$http({
 		    method: 'GET', 
 		    url: anuncio_juventud.URL + anuncio_juventud.peticion
@@ -88,19 +135,7 @@ function controlador($scope, $http){
 				alert("Ha fallado la petición. Estado HTTP: "+status);
 		});
 	}
-	vm.filtro = {};
-	vm.anuncios_favoritos = [];
-	vm.first_time = true;
-	vm.anuncios_filtrados= [];
-	vm.filtro.genero = "Ambos";
-	vm.load = function(){
-		if(vm.first_time){
-			vm.pedir(anuncio_juventud.URL + anuncio_juventud.peticion,vm.filtrar);
-		}else{
-			vm.filtrar();
-		}
-	}
-	vm.filtrar = function(){
+	this.filtrar = function(){
 		//Variables con f delante tson utilizadas por el filtro
 		vm.anuncios_filtrados= [];
 		var fCompañero;

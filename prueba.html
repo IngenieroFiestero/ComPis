@@ -9,47 +9,52 @@
     <link rel="icon" href="../../favicon.ico">
 
     <title>Busqueda de Piso</title>
-    <script src="angular-1.3.16/angular.min.js"></script>
+    <!-- Css -->
     <link href="bootstrap-3.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="ui-navbar.css" />
     <link href="home.css" rel="stylesheet">
+
+    <!-- JavaScript -->
+    <script src="angular-1.3.16/angular.min.js"></script>
+    <script src="ui-bootstrap-tpls-0.12.0.min.js"></script>
+    <script src="angular-ui-router.min.js"></script>
+    <script src="ui-navbar.js"></script>
     <script src="API-Loaderv2.js"></script>
-    <script src="bootstrap-3.3.5/assets/js/ie-emulation-modes-warning.js"></script>
 	</head>
 
-	<body ng-app="ComPiApp" ng-controller="controlador as vm">
-		<nav class="navbar navbar-inverse navbar-fixed-top">
-	      <div class="container">
-	        <div class="navbar-header">
-	          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-	            <span class="sr-only">Toggle navigation</span>
-	            <span class="icon-bar"></span>
-	            <span class="icon-bar"></span>
-	            <span class="icon-bar"></span>
-	          </button>
-	          <a class="navbar-brand" href="#">ComPis</a>
-	        </div>
-	        <div id="navbar" class="navbar-collapse collapse">
-	          <ul class="nav navbar-nav">
-	      <li class="active"><a href="#">Buscar Compañeros</a></li>
-	      <li><a href="http://www.zaragoza.es/ciudad/sectores/jovenes/cipaj/cont/insertaranuncios.htm" target="_blank">Insertar Anuncio</a></li>
-	      <li><a href="#arriba">Subir</a></li>
-	      <li class="dropdown">
-	        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-	          Acerca de<b class="caret"></b>
-	        </a>
-	        <ul class="dropdown-menu">
-	          <li><a href="#">La aplicacion</a></li>
-	          <li><a href="#">El desarrollador</a></li>
-	          <li class="divider"></li>
-	          <li><a href="#">Colabora Ayuntamiento Zaragoza</a></li>
-	        </ul>
-	      </li>
-	    </ul>
-	        </div><!--/.navbar-collapse -->
-	      </div>
-	    </nav>
+	<body ng-app="ComPiApp">
+		
+<div ng-controller="NavigationController">
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" ui-sref="home">ComPis</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" ng-class="!navCollapsed && 'in'">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Buscar Compañeros</a></li>
+        <li><a href="http://www.zaragoza.es/ciudad/sectores/jovenes/cipaj/cont/insertaranuncios.htm" target="_blank">Insertar Anuncio</a></li>
+        <li><a href="#arriba">Subir</a></li>
+        <li dropdown="">
+          <a href="#" dropdown-toggle="">
+                    Acerca de
+                                                                                                    <b class="caret"></b>
+          </a>
+          <tree tree="tree"></tree>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </nav>
+</div>
 
-		<div class="jumbotron" style="margin-top:30px" id="arriba">
+		<div class="jumbotron"  ng-controller="filtroController as vm" style="margin-top:30px" id="arriba">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-4 col-md-3 col-personalizada">
@@ -105,7 +110,7 @@
 			</div>	
 		</div>
 
-		<div class="container">
+		<div class="container" ng-controller="viewController as vm">
 			<div class="row">
 				<div class="col-sm-6 col-md-4" ng-repeat="anuncio in vm.anuncios_filtrados">
 					<div class="panel panel-default">
@@ -133,11 +138,5 @@
 			
 		</div>
 		
-
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="bootstrap-3.3.5/dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="bootstrap-3.3.5/assets/js/ie10-viewport-bug-workaround.js"></script>
 	</body>
 </html>
