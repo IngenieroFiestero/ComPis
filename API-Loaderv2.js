@@ -88,6 +88,7 @@ function controlador($scope, $http){
 				alert("Ha fallado la petición. Estado HTTP: "+status);
 		});
 	}
+	vm.filtro = {};
 	vm.anuncios_favoritos = [];
 	vm.first_time = true;
 	vm.anuncios_filtrados= [];
@@ -142,7 +143,7 @@ function controlador($scope, $http){
 				}else if(dato.euros > fEuros){
 					eliminar = true;
 				}
-			}w
+			}
 			if(fHab && dato.nHab <= fHabitaciones){
 				if(fVisu && dato.nHab === 0){
 
