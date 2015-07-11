@@ -8,13 +8,12 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Jumbotron Template for Bootstrap</title>
+    <title>Busqueda de Piso</title>
     <script src="angular-1.3.16/angular.min.js"></script>
     <link href="bootstrap-3.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="home.css" rel="stylesheet">
-    <script src="API-Loader.js"></script>
+    <script src="API-Loaderv2.js"></script>
     <script src="bootstrap-3.3.5/assets/js/ie-emulation-modes-warning.js"></script>
-    <script src="http://192.168.0.108:1337/vorlon.js"></script>
 	</head>
 
 	<body ng-app="ComPiApp" ng-controller="controlador as vm">
@@ -56,7 +55,7 @@
 					<div class="col-sm-4 col-md-3 col-personalizada">
 						<div class="input-group input-personalizado input-group-sm">
 							<span class="input-group-addon">Precio max(€)</span>
-							<input type="text" class="form-control" aria-label="Precio maximo" ng-model="vm.filtro.precio_maximo">
+							<input type="text" class="form-control" aria-label="Precio maximo" ng-model="vm.filtro.precio">
 						</div>
 					</div>
 					<div class="col-sm-4 col-md-3 col-personalizada">
@@ -92,7 +91,7 @@
 					</div>
 					<div class="col-sm-4 col-md-3 col-personalizada">
 						<p><a class="btn btn-default" ng-click="vm.load()" role="button">Aplicar Filtro &raquo;</a></p>
-						<!--<p><a class="btn btn-default" onClick="prueba()" role="button">Probando &raquo;</a></p>-->
+						<p><a class="btn btn-default" onClick="prueba()" role="button">Probando &raquo;</a></p>
 					</div>
 				</div>
 			</div>	
@@ -105,14 +104,10 @@
 					  	<div class="panel-heading header-max"><a  href="{{anuncio.URL}}" target="_blank">{{anuncio.titulo}}</a></div>
 						<ul class="list-group lista-scroll">
 							<li class="list-group-item">Descripcion:  {{anuncio.descripcion}}</li>
-							<li class="list-group-item">Precio:  {{anuncio.prec}}</li>
-							<li class="list-group-item">Habitaciones:  {{anuncio.hab}}</li>
-							<li class="list-group-item">Calle:  {{anuncio.calle}}</li>
-						  	<li class="list-group-item">Poblacion: {{anuncio.ciudad}}</li>
-						  	<li class="list-group-item">Fecha: {{anuncio.fecha}}</li>
 						  	<li class="list-group-item">Contacto:{{anuncio.contacto}}</li>
 						  	<li class="list-group-item">Telefono: {{anuncio.telefono}}</li>
-						  	<li class="list-group-item">ID: {{anuncio.id}}</li>
+							<li class="list-group-item">Precio:  {{anuncio.vPrecio}}</li>
+							<li class="list-group-item">Habitaciones:  {{anuncio.vHab}}</li>
 						</ul>
 					</div>
 				</div>

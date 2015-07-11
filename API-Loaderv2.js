@@ -51,12 +51,10 @@ function controlador($scope, $http){
 	vm.anuncio_computado = [];
 	vm.anuncio_lista = [];
 	vm.pedir = function(URL,cb){
-		console.log("pidiendo");
 		$http({
 		    method: 'GET', 
 		    url: anuncio_juventud.URL + anuncio_juventud.peticion
 			}).success(function(data, status, headers, config) {
-		    	console.log(data.result);
 		    	filtro_ID(data.result,function(vector){
 		    		vm.anuncio_lista = vector;
 		    		vector.forEach(function(dato,i){
@@ -69,19 +67,21 @@ function controlador($scope, $http){
 		    			resultado.ciudad = dato.poblacion;
 		    			resultado.fecha = dato.creationDate;
 		    			resultado.contacto = dato.contacto;
-		    			resultado.prec = resultado.precio;
-		    			resultado.hab = resultado.habitaciones;
 		    			resultado.URL = anuncio_juventud.ver_anuncio +resultado.id;
-		    			if(resultado.precio === 100000){
-		    				resultado.prec = "";
+		    			if(resultado.precio){
+		    				resultado.vPrecio = resultado.euros.toString();
+		    			}else{
+		    				resultado.vPrecio = "";
 		    			}
-		    			if(resultado.hab === 0){
-		    				resultado.hab = "";
+		    			if(resultado.hab){
+		    				resultado.vHab = resultado.nHab.toString();
+		    			}else{
+		    				resultado.vHab = "";
 		    			}
 		    			vm.anuncio_computado.push(resultado);
-		    			vm.first_time = false;
 		    		});
 		    		console.log(vm.anuncio_computado);
+		    		vm.first_time = false;
 		    		cb();
 		    	});
 			}).error(function(data, status, headers, config) {     
@@ -101,29 +101,59 @@ function controlador($scope, $http){
 	}
 	vm.filtrar = function(){
 		vm.anuncios_filtrados= [];
-		var genero = vm.filtro.genero || "Ambos";
-		var garaje = vm.filtro.garaje || false;
-		var precio = vm.filtro.precio_maximo || 100000;
-		var visu = vm.filtro.visualizacion || false;
-		var habitaciones = vm.filtro.habitaciones || -1;
+		var fCompañero;
+		var fCompañera;
+		if(vm.filtro.genero == "Compañero"){
+			fCompañero = true;
+			fCompañera = false;
+		}else if(vm.filtro.genero == "Ambos"){
+			fCompañero = true;
+			fCompañera = true;
+		}else if(vm.filtro.genero == "Compañera"){
+			fCompañero = false;
+			fCompañera = true;
+		}
+		var fGaraje = vm.filtro.garaje || false;
+		var fEuros = encontrar_int(vm.filtro.precio || 100000);
+		
+		if(fEuros === 100000){
+			fPrecio = false;
+			vm.filtro.vPrecio = "";
+		}else{
+			fPrecio = true;
+		}
+		var fVisu = vm.filtro.visualizacion || false;
+		var fHabitaciones = encontrar_int(vm.filtro.habitaciones || 0);
+		if(fHabitaciones == 0){
+			fHab = false;
+		}
 		vm.anuncio_computado.forEach(function(dato,i){
 			var eliminar = false;
-			if(garaje && dato.garaje === false){
+			if(fGaraje && dato.garaje === false){
 				eliminar = true;
 			}
-			if(dato.precio > precio && visu ===false){
-				if(visu && dato.precio === 100000){
+			if(fPrecio){
+				//Si filtramos por prercio
+				if(fVisu && dato.precio == false){
 					
-				}else{
+				}else if(dato.euros > fEuros){
 					eliminar = true;
 				}
 			}
-			if(dato.habitaciones <= habitaciones){
-				if(visu && dato.habitaciones === 0){
+			if(fHab && dato.nHab <= fHabitaciones){
+				if(fVisu && dato.nHab === 0){
 
 				}else{
 					eliminar = true;
 				}
+			}
+			//Filtrar por genero
+			if((fCompañero && fCompañera) && (dato.compañero === false  && dato.compañera === false)){
+				eliminar = true;
+			}else if(fCompañero && fCompañera === false &&(dato.compañera === true ||dato.compañero === false)){
+				eliminar = true;
+			}else if(fCompañera && fCompañero === false && (dato.compañera === false ||dato.compañero === true)){
+				eliminar = true;
 			}
 			if(eliminar === false){
 				vm.anuncios_filtrados.push(dato);
@@ -161,24 +191,30 @@ function array_booleano(longitud,valor){
 	return array;
 }
 function filtrar(frases){
-	var encontrados = array_booleano(5,false);
+	var encontrados = [];
 	var respuesta = {};
-	respuesta.precio = 100000;
-	respuesta.habitaciones = 0;
+	respuesta.precio = false;
+	respuesta.euros = 0;
+	respuesta.nHab = 0;
+	respuesta.han = false;
 	respuesta.garaje = false;
+	respuesta.compañero = true;
+	respuesta.compañera = true;
 	var frase;
 	var cb = [];
 	var claves = [];
 	//Precio, posicion=0
+	encontrados.push(false);
 	claves.push(["precio", "euros", "euro","eur","€"]);
-	cb.push(function(i,j,w){
+	cb.push(function(i,j,w,callMe){
 		if(encontrados[j] === false){
 			var z = i-1;
 			while(z < i+1){
 				if(frase[z]){
 					var numero = encontrar_int(frase[z]);
 					if(isNaN(numero) === false){
-						respuesta.precio = numero;
+						respuesta.precio = true;
+						respuesta.euros = numero;
 						encontrados[j] = true;
 					}
 				}
@@ -186,49 +222,54 @@ function filtrar(frases){
 			}
 		}
 	});
-	//Calle, posicion=1
-	claves.push(["calle","plaza","puente","avenida","pza","C/"]);
-	cb.push(function(i,j,w){
-		if(encontrados[j] === false){
-			var z = i + 1;
-			var mayusculas = buscar_mayusculas(frase.slice(i+1,i+3));
-			respuesta.calle = claves[j][w]+ " " + mayusculas.join(" ");
-			encontrados[j] = true;
-		}
-	});
-	//Zona
-	claves.push(["zona","proximo","sector","estacion","hospital","hotel","actur","universidad","cps","facultad"]);
-	cb.push(function(i,j,w){
-		if(encontrados[j] === false){
-			var z = i + 1;
-			respuesta.zona = claves[j][w]+ " " +  buscar_mayusculas(frase.slice(i+1,i+3)).join(" ");
-			encontrados[j] = true;
-		}
-	});
+	encontrados.push(false);
 	claves.push(["dormitorio","habitacion"]);
-	cb.push(function(i,j,w){
+	cb.push(function(i,j,w,callMe){
 		if(encontrados[j] === false){
 			var z = i + 1;
 			var subfrase =frase.slice(i-1,i+1);
 			subfrase.forEach(function(dato,ind){
-				var hab = encontrar_int(dato);
-				if(hab >=0){
-					respuesta.habitaciones = hab;
+				var nHab = encontrar_int(dato);
+				if(nHab >=0){
+					respuesta.hab = true;
+					respuesta.nHab = nHab;
 					encontrados[j] = true;
+					callMe(true);
 				}
 			});
 		}
 	});
-	claves.push(["garaje","cochera"]);
-	cb.push(function(i,j,w){
+	encontrados.push(false);
+	claves.push(["compañero","compañera","compañer@"]);
+	cb.push(function(i,j,w,callMe){
 		if(encontrados[j] === false){
-			console.log("garaje encontrado");
+			//Si se encuentra la palabra clave, normalmente es porque incluye garaje
+			if(w === 0){
+				respuesta.compañero = true;
+				respuesta.compañera = false;
+				callMe(true);
+			}else if(w === 1){
+				respuesta.compañero = false;
+				respuesta.compañera = true;
+				callMe(true);
+			}else if(w === 2){
+				respuesta.compañero = true;
+				respuesta.compañera = true;
+				callMe(true);
+			}
+		}
+	});
+	encontrados.push(false);
+	claves.push(["garaje","cochera","aparcamiento"]);
+	cb.push(function(i,j,w,callMe){
+		if(encontrados[j] === false){
+			//Si se encuentra la palabra clave, normalmente es porque incluye garaje
 			respuesta.garaje=true;
+			callMe(true);
 		}
 	});
 	frases.forEach(function(dato,index){
 		frase = dato;
-		//Filtrado
 		filtro_general(frase,claves,cb);
 	});
 	return respuesta;
@@ -274,8 +315,11 @@ function filtro_general(frase,claves,cb){
 						//Nosotros ya hemos encontrado la posicion y no volveremos a buscar para ese filtro
 						//Estos parametros son:
 						//i=pos palabra,j=pos diccionario,w = pos clave
-						cb[j](i,j,w);
-						encontrados[j] = true;
+						cb[j](i,j,w,function(poner_true){
+							//Hacemos que cuando acabe de trabajar cada callback
+							//Diga si hay que ponerlo a true o no, pues puede darse un falso positivo
+							encontrados[j] = true;
+						});
 					}
 					w++;
 				}
@@ -287,6 +331,7 @@ function filtro_general(frase,claves,cb){
 	}
 }
 function allTrue(vector){
+	//True si todos los datos del vector son booleanos y estan a true
 	var devolver = true;
 	var i = 0;
 	while(devolver == true && i < vector.length){
@@ -298,39 +343,6 @@ function allTrue(vector){
 	return devolver;
 }
 
-//Si encuentra la palabra clave en una palabra devuelve true
-//Ejemplo: validar_clave("euros/persona","euros")->true
-
-function encontrar_int(palabra){
-	var numero ="";
-	var encontrado = false;
-	var clave = ["cero","uno","dos","tres","cuatro","cinco","seis","siete","ocho","nueve","diez"];
-	var i = 0;
-	var salir = false;
-	palabra = palabra.toLowerCase();
-	while(encontrado === false && i < clave.length){
-		if(palabra.search(clave[i])>=0){
-			encontrado = true;
-			salir = true;
-			numero = i;
-		}
-		i++;
-	}
-	var i = 0;
-	while(salir === false && i < palabra.length){
-		var caracter = palabra.charAt(i);
-		if(isNaN(parseInt(caracter)) == false){
-			encontrado = true;
-			numero = numero + caracter;
-		}else{
-			if(encontrado == true){
-				salir = true;
-			}
-		}
-		i++;
-	}
-	return parseInt(numero);
-}
 function prueba(){
 	//console.log(encontrar_int("alfaasdasd"));
 	//console.log(encontrar_int("alfa1890beta45"));
@@ -381,4 +393,35 @@ function esClave(palabra){
 		i++;
 	}
 	return devuelve;
+}
+function encontrar_int(palabra){
+	palabra=palabra.toString();
+	var numero ="";
+	var encontrado = false;
+	var clave = ["cero","uno","dos","tres","cuatro","cinco","seis","siete","ocho","nueve","diez"];
+	var i = 0;
+	var salir = false;
+	palabra = palabra.toLowerCase();
+	while(encontrado === false && i < clave.length){
+		if(palabra.search(clave[i])>=0){
+			encontrado = true;
+			salir = true;
+			numero = i;
+		}
+		i++;
+	}
+	var i = 0;
+	while(salir === false && i < palabra.length){
+		var caracter = palabra.charAt(i);
+		if(isNaN(parseInt(caracter)) == false){
+			encontrado = true;
+			numero = numero + caracter;
+		}else{
+			if(encontrado == true){
+				salir = true;
+			}
+		}
+		i++;
+	}
+	return parseInt(numero);
 }
