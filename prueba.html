@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="ComPiApp" lang="en">
 	<head>
 		<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,14 +9,21 @@
     <link rel="icon" href="../../favicon.ico">
 
     <title>Busqueda de Piso</title>
-    <script src="angular-1.3.16/angular.min.js"></script>
+		<!-- Css -->
     <link href="bootstrap-3.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="ui-navbar.css" />
     <link href="home.css" rel="stylesheet">
+		<!-- JavaScript -->
+    <script src="angular-1.3.16/angular.min.js"></script>
+    <script src="ui-bootstrap-tpls-0.12.0.min.js"></script>
+    <script src="angular-ui-router.min.js"></script>
+    <script src="script.js"></script>
+    <script src="ui-navbar.js"></script>
     <script src="API-Loaderv2.js"></script>
-    <script src="bootstrap-3.3.5/assets/js/ie-emulation-modes-warning.js"></script>
+
 	</head>
 
-	<body ng-app="ComPiApp" ng-controller="controlador as vm">
+	<body ng-controller="controlador as vm">
 		<nav class="navbar navbar-inverse navbar-fixed-top">
 	      <div class="container">
 	        <div class="navbar-header">
@@ -102,7 +109,7 @@
 						<p><a class="btn btn-default" onClick="prueba()" role="button">Probando &raquo;</a></p>
 					</div>
 				</div>
-			</div>	
+			</div>
 		</div>
 
 		<div class="container">
@@ -130,9 +137,9 @@
 					</div>
 				</div>
 			</div>
-			
+
 		</div>
-		
+
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
