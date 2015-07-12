@@ -153,7 +153,11 @@ function filtroController($scope, $http,dataExchangeService){
 		var fCompañero;
 		var fCompañera;
 		var fFav = vm.filtro.favoritos || false;
-		var fClaves = vm.filtro.claves.split(/[,|.|;| ]/) || false;
+		var fClaves=[];
+		if(vm.filtro.claves ==""){
+		}else{
+			var fClaves = vm.filtro.claves.split(/[,|.|;| ]/);
+		}
 		if(vm.filtro.genero == "Compañero"){
 			fCompañero = true;
 			fCompañera = false;
@@ -209,7 +213,7 @@ function filtroController($scope, $http,dataExchangeService){
 			if(fFav && dato.icono == icono_glyp.off){
 				eliminar = true;
 			}
-			if(eliminar === false && fClaves){
+			if(eliminar === false && fClaves.length>0){
 				var cadena = remover_acentos(dato.titulo + ". " + dato.descripcion);
 		    	var encontrado = false;
 		    	var j = 0;
