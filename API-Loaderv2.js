@@ -176,6 +176,7 @@ function filtroController($scope, $http,dataExchangeService){
 		}
 		var fVisu = vm.filtro.visualizacion || false;
 		var fHabitaciones = encontrar_int(vm.filtro.habitaciones || 0);
+		var fHab = true;
 		if(fHabitaciones == 0){
 			fHab = false;
 		}
