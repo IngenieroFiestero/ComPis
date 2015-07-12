@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Busqueda de Piso</title>
+    <!-- Css -->
+    <link href="bootstrap-3.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="ui-navbar.css" />
+    <link href="home.css" rel="stylesheet">
+
+    <!-- JavaScript -->
+    <script src="angular-1.3.16/angular.min.js"></script>
+    <script src="ui-bootstrap-tpls-0.12.0.min.js"></script>
+    <script src="angular-ui-router.min.js"></script>
+    <script src="ui-navbar.js"></script>
+    <script src="API-Loaderv2.js"></script>
+    <script src="angular-back-top.js"></script>
+	</head>
+
+	<body ng-app="ComPiApp">
+
+		<div ng-controller="NavigationController">
+		  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" ui-sref="home">
+							<img class="img-responsive" src="logo_compi.png" width="70" height="50" alt="Logo">
+					</a>
+		    </div>
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" ng-class="!navCollapsed && 'in'">
+		      <ul class="nav navbar-nav">
+		        <li class="active"><a href="#">Buscar Compañeros</a></li>
+		        <li><a href="http://www.zaragoza.es/ciudad/sectores/jovenes/cipaj/cont/insertaranuncios.htm" target="_blank">Insertar Anuncio</a></li>
+		        <li><back-top buttonTheme="" scroll-speed=600 button-text="Subir"></back-top></li>
+		        <li class="dropdown">
+		          	<div class="btn-group" dropdown is-open="status.isopen">
+				      	<a type="button" style="background:transparent;border:none;padding-top:15px;padding-bottom:15px;"class="btn btn-primary dropdown-toggle" dropdown-toggle ng-disabled="disabled">
+				        Acerca de <span class="caret"></span>
+				      	</a>
+				      	<ul class="dropdown-menu" role="menu">
+					        <li><a href="https://github.com/IngenieroFiestero/ComPis" target="_blank">La Aplicacion</a></li>
+					        <li><a href="https://github.com/IngenieroFiestero" target="_blank">Desarrolladores</a></li>
+					        <li class="divider"></li>
+					        <li><a href="http://www.zaragoza.es" target="_blank">Colabora ayuntamiento Zaragoza</a></li>
+				      	</ul>
+				    </div>
+		        </li>
+		      </ul>
+		    </div>
+		  </nav>
+		</div>
+
+		<div class="container">
+			<div class="jumbotron"  ng-controller="filtroController as vm" style="margin-top:60px" id="arriba">
+				<div class="row row-jumbo">
+					<div class="col-sm-4 col-md-3 col-personalizada">
+						<div class="input-group input-personalizado input-group-sm">
+							<span class="input-group-addon">Precio max(€)</span>
+							<input type="text" class="form-control" aria-label="Precio maximo" ng-model="vm.filtro.precio">
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-3 col-personalizada">
+						<div class="input-group input-personalizado input-group-sm">
+							<span class="input-group-addon visor-input">Habitaciones</span>
+							<input type="text" class="form-control" aria-label="Habitaciones" ng-model="vm.filtro.habitaciones">
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-3 col-personalizada">
+						<div class="input-group input-personalizado input-group-sm">
+							<span class="input-group-addon">Palabras:</span>
+							<input type="text" class="form-control" aria-label="Precio maximo" ng-model="vm.filtro.claves">
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-3 col-personalizada">
+						 <div class="form-group form-group-sm">
+								<select class="form-control" id="sel_genero" ng-model="vm.filtro.genero">
+									<option>Ambos</option>
+									<option>Compañera</option>
+									<option>Compañero</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-3 col-personalizada">
+						<div class="input-group input-group-sm">
+							<span class="input-group-addon">Garage</span>
+							<span class="input-group-addon">
+								<input type="checkbox" aria-label="..." ng-model="vm.filtro.garaje">
+							</span>
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-3 col-personalizada">
+						<div class="input-group input-group-sm">
+							<span class="input-group-addon">Mostrar elementos omitidos</span>
+							<span class="input-group-addon">
+								<input type="checkbox" aria-label="..." ng-model="vm.filtro.visualizacion">
+							</span>
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-3 col-personalizada">
+						<div class="input-group input-group-sm">
+							<span class="input-group-addon">Solo anuncios seguidos</span>
+							<span class="input-group-addon">
+								<input type="checkbox" aria-label="..." ng-model="vm.filtro.favoritos">
+							</span>
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-3 col-personalizada">
+						<div class="span7 text-center">
+							<a class="btn btn-custom" ng-click="vm.load()" role="button">Aplicar Filtro &raquo;</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container" ng-controller="viewController as vm">
+			<div class="row">
+				<div class="col-sm-6 col-md-4" ng-repeat="anuncio in vm.view.anuncios_filtrados">
+					<div class="panel panel-default">
+					  	<div class="panel-heading header-max row">
+					  		<div class="col-xs-10">
+						  		<a href="{{anuncio.URL}}" target="_blank">{{anuncio.titulo}}</a>
+						  	</div>
+						  	<div class="col-xs-1" style="padding-left:0px">
+						  		<button type="button" class="btn btn-default" ng-click="anuncio.fav();vm.view.anuncio_computado(vm.view.anuncio_computado.lista);">
+									<a class="glyphicon" ng-class="anuncio.icono"></a>
+								</button>
+						  	</div>
+					  	</div>
+						<ul class="list-group lista-scroll">
+							<li class="list-group-item">{{anuncio.descripcion}}</li>
+						  	<li class="list-group-item">Contacto:{{anuncio.contacto}}</li>
+						  	<li class="list-group-item">Telefono: {{anuncio.telefono}}</li>
+							<li class="list-group-item">Precio:  {{anuncio.vPrecio}}</li>
+							<li class="list-group-item">Habitaciones:  {{anuncio.vHab}}</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</body>
+</html>

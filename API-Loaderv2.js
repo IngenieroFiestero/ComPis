@@ -1,7 +1,7 @@
 /*
 	ComPis: Aplicacion para trabajar con la API del ayuntamiento de zaragoza
 	
-	Utiliza algoritmos para encontrar datos dentro de la descripcion y el titulo como el precio, la calle, la zona...
+	Utiliza algoritmos para encontrar datos dentro de la descripcion y el titulo asi como el precio,si tiene garaje, la zona...
 */
 
 var anuncio_juventud = {};
@@ -9,6 +9,8 @@ anuncio_juventud.URL= "http://www.zaragoza.es/api/recurso/cultura-ocio/anuncio-j
 anuncio_juventud.peticion ="?start=0&rows=2000";
 anuncio_juventud.insertar_anuncio="http://www.zaragoza.es/ciudad/sectores/jovenes/cipaj/cont/insertaranuncios.htm"; 
 anuncio_juventud.ver_anuncio="http://www.zaragoza.es/juventud/cipaj/anuncios/obtenerAnuncio?cl=";
+
+//Icono de anuncios en seguimiento
 var icono_glyp = {};
 icono_glyp.on="glyphicon-eye-close";
 icono_glyp.off="glyphicon-eye-open";
@@ -54,6 +56,7 @@ app.controller('NavigationController', function($scope) {
 });
 app.service('dataExchangeService',dataExchangeService);
 function dataExchangeService(){
+	//Enlace entre controladores
 	this.vm ={};
 	this.vm.anuncio_computado = function(lista){
 		if(lista){
@@ -96,6 +99,7 @@ function filtroController($scope, $http,dataExchangeService){
 		}
 	}
 	this.pedir = function(URL,cb){
+		//Pide el archivo JSON y computa cada anuncio
 		$http({
 		    method: 'GET', 
 		    url: anuncio_juventud.URL + anuncio_juventud.peticion
@@ -144,7 +148,7 @@ function filtroController($scope, $http,dataExchangeService){
 		});
 	}
 	this.filtrar = function(){
-		//Variables con f delante tson utilizadas por el filtro
+		//Variables con f delante son los datos usados para filtrar
 		vm.anuncios_filtrados= [];
 		var fCompañero;
 		var fCompañera;
@@ -226,7 +230,7 @@ function filtroController($scope, $http,dataExchangeService){
 		console.log(vm.anuncios_filtrados);
 	}
 }
-//Eliminar ids innecesarias
+//Eliminar ids innecesarias solo quedandonos con ids de alquiler de pisos(oferta)
 function filtro_ID(datos,cb){
 	var vector_ID=[];
 	datos.forEach(function(dato,i){
@@ -238,6 +242,7 @@ function filtro_ID(datos,cb){
 	});
 	cb(vector_ID);
 }
+//Divide una cadena en subcadenas que estaban separadas originalmente por puntos y comas
 function dividir_cadena(cadena){
 	var frases_split_punto = cadena.split(/[,|.]/);
 	var frases = [];
@@ -246,7 +251,7 @@ function dividir_cadena(cadena){
 	});
 	return frases;
 }
-
+//Genera un array booleano
 function array_booleano(longitud,valor){
 	var array = new Array(longitud);
 	for(var i = 0; i < array.length;i++){
@@ -254,6 +259,7 @@ function array_booleano(longitud,valor){
 	}
 	return array;
 }
+//Recoge una cookie
 function getCookie(cname) {
     var name = cname + "=";
     var ca = document.cookie.split(';');
@@ -264,6 +270,8 @@ function getCookie(cname) {
     }
     return "";
 } 
+//Funcion utilizada para filtrar, en un futuro se puede definir como un objeto al que añadir "modulos" de forma dinamica
+//Estos modulos serian cada uno de los filtros a aplicar, para poder utilizar esta funcion sin tocar el codigo interno
 function filtrar(frases){
 	var encontrados = [];
 	var respuesta = {};
@@ -360,6 +368,7 @@ function filtrar(frases){
 	});
 	return respuesta;
 }
+//Elimina acentos extraños y tildes pero mantiene la "ñ"
 function remover_acentos(str) {
 	var map={'À':'A','Á':'A','Â':'A','Ã':'A','Ä':'A','Å':'A','Æ':'AE','Ç':'C','È':'E','É':'E','Ê':'E','Ë':'E','Ì':'I','Í':'I','Î':'I','Ï':'I','Ð':'D','Ò':'O','Ó':'O','Ô':'O','Õ':'O','Ö':'O','Ø':'O','Ù':'U','Ú':'U','Û':'U','Ü':'U','Ý':'Y','ß':'s','à':'a','á':'a','â':'a','ã':'a','ä':'a','å':'a','æ':'ae','ç':'c','è':'e','é':'e','ê':'e','ë':'e','ì':'i','í':'i','î':'i','ï':'i','ò':'o','ó':'o','ô':'o','õ':'o','ö':'o','ø':'o','ù':'u','ú':'u','û':'u','ü':'u','ý':'y','ÿ':'y','Ā':'A','ā':'a','Ă':'A','ă':'a','Ą':'A','ą':'a','Ć':'C','ć':'c','Ĉ':'C','ĉ':'c','Ċ':'C','ċ':'c','Č':'C','č':'c','Ď':'D','ď':'d','Đ':'D','đ':'d','Ē':'E','ē':'e','Ĕ':'E','ĕ':'e','Ė':'E','ė':'e','Ę':'E','ę':'e','Ě':'E','ě':'e','Ĝ':'G','ĝ':'g','Ğ':'G','ğ':'g','Ġ':'G','ġ':'g','Ģ':'G','ģ':'g','Ĥ':'H','ĥ':'h','Ħ':'H','ħ':'h','Ĩ':'I','ĩ':'i','Ī':'I','ī':'i','Ĭ':'I','ĭ':'i','Į':'I','į':'i','İ':'I','ı':'i','Ĳ':'IJ','ĳ':'ij','Ĵ':'J','ĵ':'j','Ķ':'K','ķ':'k','Ĺ':'L','ĺ':'l','Ļ':'L','ļ':'l','Ľ':'L','ľ':'l','Ŀ':'L','ŀ':'l','Ł':'L','ł':'l','Ń':'N','ń':'n','Ņ':'N','ņ':'n','Ň':'N','ň':'n','ŉ':'n','Ō':'O','ō':'o','Ŏ':'O','ŏ':'o','Ő':'O','ő':'o','Œ':'OE','œ':'oe','Ŕ':'R','ŕ':'r','Ŗ':'R','ŗ':'r','Ř':'R','ř':'r','Ś':'S','ś':'s','Ŝ':'S','ŝ':'s','Ş':'S','ş':'s','Š':'S','š':'s','Ţ':'T','ţ':'t','Ť':'T','ť':'t','Ŧ':'T','ŧ':'t','Ũ':'U','ũ':'u','Ū':'U','ū':'u','Ŭ':'U','ŭ':'u','Ů':'U','ů':'u','Ű':'U','ű':'u','Ų':'U','ų':'u','Ŵ':'W','ŵ':'w','Ŷ':'Y','ŷ':'y','Ÿ':'Y','Ź':'Z','ź':'z','Ż':'Z','ż':'z','Ž':'Z','ž':'z','ſ':'s','ƒ':'f','Ơ':'O','ơ':'o','Ư':'U','ư':'u','Ǎ':'A','ǎ':'a','Ǐ':'I','ǐ':'i','Ǒ':'O','ǒ':'o','Ǔ':'U','ǔ':'u','Ǖ':'U','ǖ':'u','Ǘ':'U','ǘ':'u','Ǚ':'U','ǚ':'u','Ǜ':'U','ǜ':'u','Ǻ':'A','ǻ':'a','Ǽ':'AE','ǽ':'ae','Ǿ':'O','ǿ':'o'};
 	var res="";
@@ -369,6 +378,7 @@ function remover_acentos(str) {
 	}
 	return res;
 }
+//Busca palabras que empiezan por mayuscula
 function buscar_mayusculas(frase){
 	var mayusculas = [];
 	frase.forEach(function(dato,i){
@@ -379,8 +389,9 @@ function buscar_mayusculas(frase){
 	});
 	return mayusculas;
 }
+//Filtro utilizado para encontrar cualquier tipo de informacion a traves de palabras clave
 function filtro_general(frase,claves,cb){
-	//claves es un array que contiene en cada posicion un array de claves
+	//claves es un array que contiene en cada posicion un array de palabras claves
 	//cb es un array de callbacks
 	var i = 0;
 	var j = 0;
@@ -428,23 +439,6 @@ function allTrue(vector){
 	}
 	return devolver;
 }
-
-function prueba(){
-	//console.log(encontrar_int("alfaasdasd"));
-	//console.log(encontrar_int("alfa1890beta45"));
-	//console.log(eliminar_paja(descripcion_ejemplo));
-	
-	/*busqueda_precios(eliminar_paja(descripcion_ejemplo),function(precio){
-		console.log(precio);
-	});*/
-	//filtrar(dividir_cadena(descripcion_ejemplo));
-	//console.log(descripcion_ejemplo.search("euro"));
-	//dividir_cadena(descripcion_ejemplo);
-	//var cadena = remover_acentos(descripcion_ejemplo);
-	//var resultado = filtrar(dividir_cadena(cadena));
-	console.log(descripcion_ejemplo);
-	console.log(descripcion_ejemplo.split(/[,|.]/));
-}
 /* 
 	Analizador sintáctico de oraciones:
 	
@@ -469,6 +463,7 @@ function eliminar_paja(cadena){
 	});
 	return cadena_computada;
 }
+//Utilizada para encontrar en eliminar_paja() palabras cuyo significado no aporta informacion
 function esClave(palabra){
 	var devuelve = false;
 	var i = 0;
@@ -480,6 +475,7 @@ function esClave(palabra){
 	}
 	return devuelve;
 }
+//Encuentra un numero dentro de una cadena incluso si esta escrito en forma alfabetica
 function encontrar_int(palabra){
 	palabra=palabra.toString();
 	var numero ="";
