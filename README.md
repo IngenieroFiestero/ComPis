@@ -9,3 +9,5 @@ Permite utilizar distintos parametros de busqueda como:
 - Incluye un boton para mostrar anuncios omitidos que no proporcionan la informacion requerida por el usuario.
 
 Tambien hace uso de una lista de anuncios seguidos usando para ello el boton superior derecho de cada anuncio. Esto hace que ComPis sea una potente herramienta que no solo permite encontrar facilmente un piso, sino que tambien permite llevar un seguimiento de los anuncios que te gustan para no tener que anotarlos en un papel.
+
+Para facilitar la labor de busqueda, se incorpora un boton de subir arriba en la barra de navegacion, de esta forma puedes llegar con un solo click a la parte superior de la pagina.
