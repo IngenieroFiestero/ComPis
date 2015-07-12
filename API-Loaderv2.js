@@ -139,7 +139,6 @@ function filtroController($scope, $http,dataExchangeService){
 		    			}
 		    			vm.anuncio_computado.lista.push(resultado);
 		    		});
-		    		console.log(vm.anuncio_computado.lista);
 		    		vm.first_time = false;
 		    		cb();
 		    	});
@@ -231,7 +230,6 @@ function filtroController($scope, $http,dataExchangeService){
 				vm.anuncios_filtrados.push(dato);
 			}
 		});
-		console.log(vm.anuncios_filtrados);
 	}
 }
 //Eliminar ids innecesarias solo quedandonos con ids de alquiler de pisos(oferta)
