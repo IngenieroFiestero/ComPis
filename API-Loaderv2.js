@@ -47,7 +47,7 @@ estaciones_bici.peticion="?start=0&rows=2000&srsname=wgs84";
 
 var descripcion_ejemplo = "Se alquila piso para estudiantes de septiembre a junio. Tres habitaciones, 2º con ascensor, amueblado, con calefacción y aire acondicionado";
 
-var app = angular.module('ComPiApp', ['ui.bootstrap', 'ui.router', 'ui.navbar']);
+var app = angular.module('ComPiApp', ['ui.bootstrap', 'ui.router', 'ui.navbar','angular.backtop']);
 app.controller("filtroController", filtroController);
 app.controller("viewController",viewController);
 app.controller('NavigationController', function($scope) {
