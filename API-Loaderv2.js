@@ -77,6 +77,7 @@ function dataExchangeService(){
 	this.vm.filtro = {};
 	this.vm.anuncios_filtrados = [];
 	this.vm.first_time = true;
+	this.vm.filtro.claves="";
 	this.vm.filtro.genero = "Ambos";
 }
 function viewController($scope,dataExchangeService){
@@ -148,6 +149,7 @@ function filtroController($scope, $http,dataExchangeService){
 		var fCompañero;
 		var fCompañera;
 		var fFav = vm.filtro.favoritos || false;
+		var fClaves = vm.filtro.claves.split(/[,|.|;| ]/) || false;
 		if(vm.filtro.genero == "Compañero"){
 			fCompañero = true;
 			fCompañera = false;
@@ -203,6 +205,20 @@ function filtroController($scope, $http,dataExchangeService){
 			if(fFav && dato.icono == icono_glyp.off){
 				eliminar = true;
 			}
+			if(eliminar === false && fClaves){
+				var cadena = remover_acentos(dato.titulo + ". " + dato.descripcion);
+		    	var encontrado = false;
+		    	var j = 0;
+		    	while(encontrado == false && j < fClaves.length){
+		    		if(cadena.search(fClaves[j]) > 0){
+		    			encontrado=true;
+		    		}
+		    		j++;
+		    	}
+		    	if(encontrado == false){
+		    		eliminar = true;
+		    	}
+		    }
 			if(eliminar === false){
 				vm.anuncios_filtrados.push(dato);
 			}
