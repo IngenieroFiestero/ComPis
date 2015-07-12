@@ -16,7 +16,6 @@
 
     <!-- JavaScript -->
     <script src="angular-1.3.16/angular.min.js"></script>
-    <script src="angular-1.3.16/angular-cookies.js"></script>
     <script src="ui-bootstrap-tpls-0.12.0.min.js"></script>
     <script src="angular-ui-router.min.js"></script>
     <script src="ui-navbar.js"></script>
@@ -43,11 +42,11 @@
         <li><a href="http://www.zaragoza.es/ciudad/sectores/jovenes/cipaj/cont/insertaranuncios.htm" target="_blank">Insertar Anuncio</a></li>
         <li><a href="#arriba">Subir</a></li>
         <li dropdown="">
-          <a href="#" dropdown-toggle="">
-                    Acerca de
-                                                                                                    <b class="caret"></b>
-          </a>
-          <tree tree="tree"></tree>
+	        <a href="#" dropdown-toggle="">
+	            Acerca de
+	            <b class="caret"></b>
+	        </a>
+        	<tree tree="tree"></tree>
         </li>
       </ul>
     </div>
@@ -55,8 +54,8 @@
   </nav>
 </div>
 
-		<div class="container">
-			<div class="jumbotron"  ng-controller="filtroController as vm" style="margin-top:30px" id="arriba">			
+		<div class="container" id="arriba">
+			<div class="jumbotron"  ng-controller="filtroController as vm" style="margin-top:30px">			
 				<div class="row">
 					<div class="col-sm-4 col-md-3 col-personalizada">
 						<div class="input-group input-personalizado input-group-sm">
