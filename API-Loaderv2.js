@@ -9,6 +9,9 @@ anuncio_juventud.URL= "http://www.zaragoza.es/api/recurso/cultura-ocio/anuncio-j
 anuncio_juventud.peticion ="?start=0&rows=2000";
 anuncio_juventud.insertar_anuncio="http://www.zaragoza.es/ciudad/sectores/jovenes/cipaj/cont/insertaranuncios.htm"; 
 anuncio_juventud.ver_anuncio="http://www.zaragoza.es/juventud/cipaj/anuncios/obtenerAnuncio?cl=";
+var icono_glyp = {};
+icono_glyp.on="glyphicon-eye-close";
+icono_glyp.off="glyphicon-eye-open";
 	//URL de la API de anuncios para jovenes
 	/*
 	fl : Listado de atributos separados por comas que
@@ -44,10 +47,9 @@ estaciones_bici.peticion="?start=0&rows=2000&srsname=wgs84";
 
 var descripcion_ejemplo = "Se alquila piso para estudiantes de septiembre a junio. Tres habitaciones, 2º con ascensor, amueblado, con calefacción y aire acondicionado";
 
-var app = angular.module('ComPiApp', ['ui.bootstrap', 'ui.router', 'ui.navbar']);
+var app = angular.module('ComPiApp', ['ui.bootstrap', 'ui.router', 'ui.navbar' ,'ngCookies']);
 app.controller("filtroController", filtroController);
 app.controller("viewController",viewController);
-app.controller('cookieController',cookieController);
 app.controller('NavigationController', function($scope) {
 
   $scope.tree = [{
@@ -68,31 +70,40 @@ app.controller('NavigationController', function($scope) {
 app.service('dataExchangeService',dataExchangeService);
 function dataExchangeService(){
 	this.vm ={};
-	this.vm.anuncio_computado = [];
+	this.vm.anuncio_computado = function(lista){
+		if(lista){
+			var anuncios_favoritos =[];
+			lista.forEach(function(dato,i){
+				if(dato.icono == icono_glyp.on){
+					anuncios_favoritos.push(dato.id);
+				}else{
+				}
+			});
+			var d = new Date();
+		    d.setTime(d.getTime() + (10*24*60*60*1000));
+		    var expires = "expires="+d.toUTCString();
+			document.cookie=fav_cook_name + "="+anuncios_favoritos.join("-")+";"+expires;
+		}else{
+		}
+		
+	}
+	this.vm.anuncio_computado.lista = [];
 	this.vm.anuncio_lista = [];
 	this.vm.filtro = {};
-	this.vm.anuncios_favoritos = [];
+	this.vm.anuncios_filtrados = [];
 	this.vm.first_time = true;
-	this.vm.anuncios_filtrados= [];
 	this.vm.filtro.genero = "Ambos";
 }
 function viewController($scope,dataExchangeService){
 	this.view = dataExchangeService.vm;
 }
-function cookieController($cookies,dataExchangeService){
-	var vm = dataExchangeService.vm;
-	var favoriteCookie = $cookies.get(fav_cook_name);
-	if(favoriteCookie){
-		vm.anuncios_favoritos = favoriteCookie.split("-");
-	}else{
-		$cookies.put(fav_cook_name, '');
-	}
-}
 function filtroController($scope, $http,dataExchangeService){
 	this.filtro = dataExchangeService.vm.filtro;
-	var vm = dataExchangeService.vm
+	var vm = dataExchangeService.vm;
+	var anuncios_favoritos={};
 	this.load = function(){
 		if(vm.first_time){
+			anuncios_favoritos = getCookie(fav_cook_name).split("-");
 			this.pedir(anuncio_juventud.URL + anuncio_juventud.peticion,this.filtrar);
 		}else{
 			this.filtrar();
@@ -116,6 +127,16 @@ function filtroController($scope, $http,dataExchangeService){
 		    			resultado.fecha = dato.creationDate;
 		    			resultado.contacto = dato.contacto;
 		    			resultado.URL = anuncio_juventud.ver_anuncio +resultado.id;
+		    			//colocar favoritos
+		    			var encontrado = false;
+		    			var j = 0;
+		    			while(encontrado == false && j < anuncios_favoritos.length){
+		    				if(anuncios_favoritos[j] == dato.id){
+		    					resultado.icono = icono_glyp.on;
+		    					encontrado = true;
+		    				}
+		    				j++;
+		    			}
 		    			if(resultado.precio){
 		    				resultado.vPrecio = resultado.euros.toString();
 		    			}else{
@@ -126,9 +147,9 @@ function filtroController($scope, $http,dataExchangeService){
 		    			}else{
 		    				resultado.vHab = "";
 		    			}
-		    			vm.anuncio_computado.push(resultado);
+		    			vm.anuncio_computado.lista.push(resultado);
 		    		});
-		    		console.log(vm.anuncio_computado);
+		    		console.log(vm.anuncio_computado.lista);
 		    		vm.first_time = false;
 		    		cb();
 		    	});
@@ -141,6 +162,7 @@ function filtroController($scope, $http,dataExchangeService){
 		vm.anuncios_filtrados= [];
 		var fCompañero;
 		var fCompañera;
+		var fFav = vm.filtro.favoritos || false;
 		if(vm.filtro.genero == "Compañero"){
 			fCompañero = true;
 			fCompañera = false;
@@ -163,7 +185,7 @@ function filtroController($scope, $http,dataExchangeService){
 		if(fHabitaciones == 0){
 			fHab = false;
 		}
-		vm.anuncio_computado.forEach(function(dato,i){
+		vm.anuncio_computado.lista.forEach(function(dato,i){
 			var eliminar = false;
 			if(fGaraje && dato.garaje === false){
 				eliminar = true;
@@ -191,6 +213,9 @@ function filtroController($scope, $http,dataExchangeService){
 			}else if(fCompañero && fCompañera === false &&(dato.compañera === true ||dato.compañero === false)){
 				eliminar = true;
 			}else if(fCompañera && fCompañero === false && (dato.compañera === false ||dato.compañero === true)){
+				eliminar = true;
+			}
+			if(fFav && dato.icono == icono_glyp.off){
 				eliminar = true;
 			}
 			if(eliminar === false){
@@ -228,6 +253,16 @@ function array_booleano(longitud,valor){
 	}
 	return array;
 }
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1);
+        if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+    }
+    return "";
+} 
 function filtrar(frases){
 	var encontrados = [];
 	var respuesta = {};
@@ -238,6 +273,18 @@ function filtrar(frases){
 	respuesta.garaje = false;
 	respuesta.compañero = true;
 	respuesta.compañera = true;
+	respuesta.fav = function(icono){
+		if(icono){
+			this.icono = icono;
+		}else{
+			if(this.icono === icono_glyp.off){
+				this.icono = icono_glyp.on;
+			}else if(this.icono === icono_glyp.on){
+				this.icono = icono_glyp.off;
+			}
+		}	
+	}
+	respuesta.fav(icono_glyp.off);
 	var frase;
 	var cb = [];
 	var claves = [];
