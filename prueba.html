@@ -44,12 +44,18 @@
 		        <li class="active"><a href="#">Buscar Compañeros</a></li>
 		        <li><a href="http://www.zaragoza.es/ciudad/sectores/jovenes/cipaj/cont/insertaranuncios.htm" target="_blank">Insertar Anuncio</a></li>
 		        <li><back-top buttonTheme="" scroll-speed=600 button-text="Subir"></back-top></li>
-		        <li dropdown="">
-			        <a href="#" dropdown-toggle="">
-			            Acerca de
-			        	<b class="caret"></b>
-			        </a>
-		          <tree tree="tree"></tree>
+		        <li class="dropdown">
+		          	<div class="btn-group" dropdown is-open="status.isopen">
+				      	<a type="button" style="background:transparent;border:none;padding-top:15px;padding-bottom:15px;"class="btn btn-primary dropdown-toggle" dropdown-toggle ng-disabled="disabled">
+				        Acerca de <span class="caret"></span>
+				      	</a>
+				      	<ul class="dropdown-menu" role="menu">
+					        <li><a href="https://github.com/IngenieroFiestero/ComPis" target="_blank">La Aplicacion</a></li>
+					        <li><a href="https://github.com/IngenieroFiestero" target="_blank">Desarrolladores</a></li>
+					        <li class="divider"></li>
+					        <li><a href="http://www.zaragoza.es" target="_blank">Colabora ayuntamiento Zaragoza</a></li>
+				      	</ul>
+				    </div>
 		        </li>
 		      </ul>
 		    </div>

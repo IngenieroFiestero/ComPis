@@ -51,21 +51,6 @@ var app = angular.module('ComPiApp', ['ui.bootstrap', 'ui.router', 'ui.navbar','
 app.controller("filtroController", filtroController);
 app.controller("viewController",viewController);
 app.controller('NavigationController', function($scope) {
-
-  $scope.tree = [{
-    name: "La aplicacion",
-    link: "#",
-  }, {
-    name: "Desarollador",
-    link: "#",
-  }, {
-    name: "divider",
-    link: "#"
-
-  }, {
-    name: "Colabora Ayuntamiento Zaragoza",
-    link: "#"
-  }];
 });
 app.service('dataExchangeService',dataExchangeService);
 function dataExchangeService(){
