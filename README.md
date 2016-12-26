@@ -1,4 +1,4 @@
-# ComPis
+# ComPis (No funciona ya por cambio en la API de zaragoza)
 Aplicacion web para encontrar rapidamente piso en zaragoza a traves del uso de los anuncios para jovenes que proporciona el ayuntamiento de Zaragoza.
 Permite utilizar distintos parametros de busqueda como:
 - Precio Maximo: Valor maximo dispuesto a pagar por el piso al mes.
